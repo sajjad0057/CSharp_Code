@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeNameSpace", "Practi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestOOP", "TestOOP\TestOOP.csproj", "{061F5706-B340-4F65-933C-3F1145EEAAE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Finalizer", "OOP_Finalizer\OOP_Finalizer.csproj", "{04D843CC-D6F5-4103-A20A-CC141904A12A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{061F5706-B340-4F65-933C-3F1145EEAAE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{061F5706-B340-4F65-933C-3F1145EEAAE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{061F5706-B340-4F65-933C-3F1145EEAAE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04D843CC-D6F5-4103-A20A-CC141904A12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04D843CC-D6F5-4103-A20A-CC141904A12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04D843CC-D6F5-4103-A20A-CC141904A12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04D843CC-D6F5-4103-A20A-CC141904A12A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
