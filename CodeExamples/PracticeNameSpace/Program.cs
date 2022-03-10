@@ -1,6 +1,8 @@
 ﻿
 
 using PracticeNameSpace;
+using TestOOP;
+using PracticeNameSpace.SubModule;
 
 
 /*
@@ -11,6 +13,14 @@ automatically .
 
  */
 
-Product p = new Product();
+PracticeNameSpace.Product p = new PracticeNameSpace.Product();
 p.Name = "sajjad";
 Console.WriteLine(p.Name);
+
+TestOOP.Product pt = new TestOOP.Product();
+pt.Name = "zahan";
+Console.WriteLine(pt.Name);
+
+PracticeNameSpace.SubModule.Product ps = new PracticeNameSpace.SubModule.Product();
+ps.Name = "nefal";
+Console.WriteLine(ps.Name);
