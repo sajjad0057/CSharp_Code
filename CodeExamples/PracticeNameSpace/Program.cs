@@ -1,8 +1,15 @@
 ﻿
 
+//using PracticeNameSpace;
+//using TestOOP;
+//using  PracticeNameSpace.SubModule;
+
+
+// Aliasing Namespace :
 using PracticeNameSpace;
 using TestOOP;
-using PracticeNameSpace.SubModule;
+using SubProduct = PracticeNameSpace.SubModule.Product;
+
 
 
 /*
@@ -21,6 +28,9 @@ TestOOP.Product pt = new TestOOP.Product();
 pt.Name = "zahan";
 Console.WriteLine(pt.Name);
 
-PracticeNameSpace.SubModule.Product ps = new PracticeNameSpace.SubModule.Product();
+
+// Using aliasing namespace in below :
+
+SubProduct ps = new SubProduct();
 ps.Name = "nefal";
 Console.WriteLine(ps.Name);
