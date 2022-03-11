@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOP_1
 {
-<<<<<<< HEAD
-    internal class EightSideDice : Dice  // inheritance 
-=======
+
     internal class EightSideDice : Dice
->>>>>>> 612de7de7eb64e668199a552049fccaa97a6d359
+
     {
         public EightSideDice()
         {
