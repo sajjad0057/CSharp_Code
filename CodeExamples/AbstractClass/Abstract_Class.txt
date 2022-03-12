@@ -21,6 +21,7 @@ public abstract class A
 
 
  => An abstract class cannot be instantiated. 
+
  => Abstract classes may also define abstract methods. This is accomplished by adding the keyword abstract before the return type of the method.
     For example:
 
@@ -32,11 +33,13 @@ public abstract class A
     }
 
 
- => Abstract methods have no implementation, so the method definition is followed by a semicolon instead
+ => Abstract methods have no implementation,
+     so the method definition is followed by a semicolon instead
      of a normal method block. Derived classes of the abstract class must implement all abstract methods.
      When an abstract class inherits a virtual method from a base class,
      the abstract class can override the virtual method with an abstract method. 
      For example:
+
      // compile with: -target:library
 
         public class D
@@ -65,3 +68,36 @@ public abstract class A
         class. A class inheriting an abstract method cannot access the original implementation of the method—in
         the previous example, DoWork on class F cannot call DoWork on class D. In this way,
         an abstract class can force derived classes to provide new method implementations for virtual methods.
+
+
+
+
+
+
+
+
+
+
+
+
+        ###           Difference Between Abstract Class and Interface          ###
+====================================================================================================================
+            Abstract Class                       	        vs                          Interface
+===========================================================================================================================
+1. It contains both declaration and definition part. 	     -    1. It contains only a declaration part.
+2. Multiple inheritance is not achieved by abstract class.   -    2. Multiple inheritance is achieved by interface.
+3. It contain constructor.	                                 -    3. It does not contain constructor.
+4. It can contain static members.	                         -    4. It does not contain static members.
+5. It can contain different types of access modifiers        -    5. It only contains public access modifier because everything 
+   like public, private, protected etc.                              in the interface is public. 	
+6. The performance of an abstract class is fast.	         -    6. The performance of interface is slow because it requires time to 
+                                                                     search actual method in the corresponding class.
+7. It is used to implement the core identity of class.	     -    7. It is used to implement peripheral abilities of class.
+8. A class can only use one abstract class.	                 -    8. A class can use multiple interface.
+9. If many implementations are of the same kind and          -    9. If many implementations only share methods, then it is superior to use Interface.
+   use common behavior, then it is superior to use 
+   abstract class.
+
+10. Abstract class can contain methods, fields, constants,   -    10. Interface can only contains methods, properties, indexers, events.
+    etc. 	
+11. It can be fully, partially or not implemented.           -    11. It should be fully implemented.
