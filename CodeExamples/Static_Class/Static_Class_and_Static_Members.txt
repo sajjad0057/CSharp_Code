@@ -1,0 +1,10 @@
+﻿
+The following list provides the main features of a static class:
+
+	-> Contains only static members.
+
+	-> Cannot be instantiated.
+
+	-> Is sealed.
+
+	-> Cannot contain Instance Constructors. But Contain Static Constructors .

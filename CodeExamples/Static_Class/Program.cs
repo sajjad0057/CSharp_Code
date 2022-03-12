@@ -37,7 +37,8 @@ Console.WriteLine(b2.color);
 Console.WriteLine(Waterbottle.count);
 
 
-// Exa
+// Example of static class and uses of static class 
+
 ExampleOfStaticClass.printArray(new int[] { 1, 2, 3, 4, 5, 6, });
 
 Console.WriteLine("\n-----------------------------------------------------");
