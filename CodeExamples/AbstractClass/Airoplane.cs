@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractClass
 {
-    public class Airoplane : Vehicle
+    public class Airoplane : Vehicle , IMovable
     {
 
 
@@ -30,5 +30,9 @@ namespace AbstractClass
 
         }
 
+        public void Move()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

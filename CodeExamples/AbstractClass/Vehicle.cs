@@ -11,6 +11,19 @@ namespace AbstractClass
         public int PassengerCount { get; set; }
         public double Speed { get; set; }
 
+
+
+
+        private double fuel;
+        
+        
+        // AbstractClass can contain Constractor . 
+
+        public Vehicle()
+        {
+            fuel = 0;
+        }
+
         public abstract void StratEngine();
 
 

@@ -81,9 +81,9 @@ public abstract class A
 
 
         ###           Difference Between Abstract Class and Interface          ###
-====================================================================================================================
+==================================================================================================================================================
             Abstract Class                       	        vs                          Interface
-===========================================================================================================================
+==================================================================================================================================================
 1. It contains both declaration and definition part. 	     -    1. It contains only a declaration part.
 2. Multiple inheritance is not achieved by abstract class.   -    2. Multiple inheritance is achieved by interface.
 3. It contain constructor.	                                 -    3. It does not contain constructor.
@@ -101,3 +101,13 @@ public abstract class A
 10. Abstract class can contain methods, fields, constants,   -    10. Interface can only contains methods, properties, indexers, events.
     etc. 	
 11. It can be fully, partially or not implemented.           -    11. It should be fully implemented.
+
+====================================================================================================================================================
+
+
+
+
+######       C# method signature     #######
+
+A method signature is a unique identification of a method for the C# compiler.The signature consists of a method name and the type and kind 
+(value, reference, or output) of each of its formal parameters. Method signature does not include the return type.

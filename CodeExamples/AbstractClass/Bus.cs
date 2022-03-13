@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AbstractClass
 {
-    internal class Bus : Vehicle
+    internal class Bus : Vehicle , IMovable
     {
 
 
@@ -26,5 +26,14 @@ namespace AbstractClass
 
         }
 
+        public void Move()
+        {
+            Console.WriteLine("Move from Bus");
+        }
+
+        public void Stop()
+        {
+            Console.WriteLine("Stop from Bus");
+        }
     }
 }
