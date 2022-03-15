@@ -14,7 +14,7 @@ namespace InheritanceFeature
         public double CalculateDiscount(double percent)
         {
 
-            Console.WriteLine("Called from Product !");
+            Console.WriteLine("Called from  Product class !");
             return Price * percent / 100;
         }
     }

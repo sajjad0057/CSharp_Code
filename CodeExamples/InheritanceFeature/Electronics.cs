@@ -10,7 +10,7 @@ namespace InheritanceFeature
     {
         public new double CalculateDiscount(double percent)
         {
-            Console.WriteLine("Called From Electronics !");
+            Console.WriteLine("Called From  Electronics class !");
             
             if (percent > 20)
                 percent = 20;

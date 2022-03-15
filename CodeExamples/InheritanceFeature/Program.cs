@@ -8,11 +8,12 @@
 Product p1 = new Electronics();   
 
 p1.Price = 200;
+
 Console.WriteLine(p1.CalculateDiscount(25));
 
 
 
-// Unboxing P1 Object from Product to Electronis :
+// Unboxing P1 Object from Product to Electronis  :
 Electronics p2 = (Electronics)p1;
 
 Console.WriteLine(p2.CalculateDiscount(25));
