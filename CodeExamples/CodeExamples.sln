@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InheritanceFeature", "Inher
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialClass", "PartialClass\PartialClass.csproj", "{336475CC-4A58-4ACD-8D65-5ED0C2DB3471}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structure_or_struct", "Structure_or_struct\Structure_or_struct.csproj", "{8A2FE3DE-3F12-4F1C-9474-C11837318168}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{336475CC-4A58-4ACD-8D65-5ED0C2DB3471}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{336475CC-4A58-4ACD-8D65-5ED0C2DB3471}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{336475CC-4A58-4ACD-8D65-5ED0C2DB3471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A2FE3DE-3F12-4F1C-9474-C11837318168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A2FE3DE-3F12-4F1C-9474-C11837318168}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A2FE3DE-3F12-4F1C-9474-C11837318168}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A2FE3DE-3F12-4F1C-9474-C11837318168}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

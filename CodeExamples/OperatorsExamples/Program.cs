@@ -82,6 +82,40 @@ Console.WriteLine($"\n" +
     $"--------------------------------------------------\n");
 #endregion
 
+#region Pointer related Operators and sizeOf Operator
+
+
+Console.WriteLine($"\n" +
+    $"Pointer related Operators and sizeof Operator\n" +
+    $"---------------------------------------------------\n");
+/*
+Any operation with pointers must requires an unsafe context. 
+The code that contains unsafe blocks must be compiled with 
+the AllowUnsafeBlocks compiler option.
+
+Also,
+The sizeof operator requires an unsafe context
+
+The sizeof operator returns the number of bytes occupied by a variable of a given type.
+*/
+
+unsafe
+{
+    int number = 27;
+    int* pointerToNumber = &number;
+
+    Console.WriteLine($"Value of the variable: {number}");
+    Console.WriteLine($"Address of the variable: {(long)pointerToNumber:X}");
+    Console.WriteLine($"Number of bytes occupied by variable typed int: {sizeof(int)}");
+}
+
+
+Console.WriteLine($"\n" +
+    $"End Pointer related Operators and sizeof Operator\n" +
+    $"---------------------------------------------------\n");
+#endregion
+
+
 
 #region Example 4 - Bitwise complement operator ~
 
