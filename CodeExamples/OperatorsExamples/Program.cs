@@ -178,7 +178,33 @@ Console.WriteLine($"\n" +
 #endregion
 
 
+#region example of Ternary Operator & Lambda Expression
 
+Console.WriteLine("\nExample of Ternary Operator & Lambda Expression :");
+
+
+/*
+ Ternary Operator :
+    condition ? consequent : alternative  
+
+Lambda Expression :
+    (input-parameters) = > expression
+    (input-parameters) = > { sequence - of - statement }
+ */
+
+
+
+string GetWeatherDisplay(double tempInCelsius) => tempInCelsius < 20.0 ? "Cold." : "Perfect!";
+
+Console.WriteLine(GetWeatherDisplay(15));  // output: Cold.
+Console.WriteLine(GetWeatherDisplay(27));  // output: Perfect!
+
+
+Console.WriteLine("\nEnd Example of Ternary Operator & Lambda Expression \n" +
+    "--------------------------------------------------\n");
+
+
+#endregion
 
 
 
