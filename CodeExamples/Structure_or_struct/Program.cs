@@ -1,6 +1,5 @@
 ﻿using StructureExamples;
 
-
 // Value Type 
 int x1 = 5;
 int x2 = x1;
@@ -11,13 +10,12 @@ Console.WriteLine($"x2 = {x2} ; x1 = {x1}");
 
 
 
-
-
-
 Product p1 = new Product();
+
 p1.Name = "Camera";
 p1.Price = 2000;
 p1.Name = "nokia";
+
 
 Product p2 = new Product();
 p2 = p1;
