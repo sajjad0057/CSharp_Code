@@ -35,3 +35,16 @@ else if (paymentStatus == PaymentStatus.cancel)
 int x = (int)paymentStatus;
 Console.WriteLine(x);
 
+
+// DateTime 
+
+DateTime date =new  DateTime();
+
+Console.WriteLine($" Is DayLight : {date.IsDaylightSavingTime()}");
+
+Console.WriteLine($" Corrent Month : {DateTime.Now.Month}");
+
+Console.WriteLine($" Time of day : {DateTime.Now.TimeOfDay}");
+
+Console.WriteLine($" Day : {DateTime.Now.Day}");
+
