@@ -33,9 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PartialClass", "PartialClas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structure_or_struct", "Structure_or_struct\Structure_or_struct.csproj", "{8A2FE3DE-3F12-4F1C-9474-C11837318168}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{B292E723-BF4A-4632-8449-A66FDA3D64D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorOverloading", "OperatorOverloading\OperatorOverloading.csproj", "{B292E723-BF4A-4632-8449-A66FDA3D64D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumExamples", "EnumExamples\EnumExamples.csproj", "{5F907687-6FB2-4C2A-8662-03D5A2EECE78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumExamples", "EnumExamples\EnumExamples.csproj", "{5F907687-6FB2-4C2A-8662-03D5A2EECE78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeConvert", "DateTimeConvert\DateTimeConvert.csproj", "{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{5F907687-6FB2-4C2A-8662-03D5A2EECE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F907687-6FB2-4C2A-8662-03D5A2EECE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F907687-6FB2-4C2A-8662-03D5A2EECE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
