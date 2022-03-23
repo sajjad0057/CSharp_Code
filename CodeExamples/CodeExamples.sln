@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OperatorOverloading", "Oper
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumExamples", "EnumExamples\EnumExamples.csproj", "{5F907687-6FB2-4C2A-8662-03D5A2EECE78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeConvert", "DateTimeConvert\DateTimeConvert.csproj", "{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeConvert", "DateTimeConvert\DateTimeConvert.csproj", "{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{A6390576-F864-4E44-82F0-37DDE620B815}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6390576-F864-4E44-82F0-37DDE620B815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6390576-F864-4E44-82F0-37DDE620B815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6390576-F864-4E44-82F0-37DDE620B815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6390576-F864-4E44-82F0-37DDE620B815}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
