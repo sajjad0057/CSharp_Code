@@ -41,7 +41,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeConvert", "DateTime
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{A6390576-F864-4E44-82F0-37DDE620B815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder_Example", "StringBuilder_Example\StringBuilder_Example.csproj", "{2D4680B5-CB95-437C-91E9-774D51ACE310}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringBuilder_Example", "StringBuilder_Example\StringBuilder_Example.csproj", "{2D4680B5-CB95-437C-91E9-774D51ACE310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParameterModifiers", "ParameterModifiers\ParameterModifiers.csproj", "{8FF4F239-E1CD-4E7A-9F22-4E68353EC065}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{2D4680B5-CB95-437C-91E9-774D51ACE310}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D4680B5-CB95-437C-91E9-774D51ACE310}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D4680B5-CB95-437C-91E9-774D51ACE310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FF4F239-E1CD-4E7A-9F22-4E68353EC065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FF4F239-E1CD-4E7A-9F22-4E68353EC065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FF4F239-E1CD-4E7A-9F22-4E68353EC065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FF4F239-E1CD-4E7A-9F22-4E68353EC065}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
