@@ -8,13 +8,16 @@ string text = "Hello";
 
 string text2 = "World";
 
-string text3 = text + text2;
+StringBuilder text3 = new StringBuilder(text + text2);
 
-//for (int i = 0; i < text.Length; i++)
-//{
-//    if (text[i] == 'a' || text[i] == 'b')
-//        text[i] = '_';     // here not possible modifying in string conditionally . 
-//}
+for (int i = 0; i < text.Length; i++)
+{
+    if (text3[i] == 'e' || text3[i] == 'o')
+        text3[i] = '_';     // here it is possible modifying in string conditionally, if text3 be object of StringBuilder . 
+}
+
+
+Console.WriteLine(text3);
 
 
 
@@ -38,7 +41,9 @@ while (true)
 
 // efficient way to modifying string using StringBuilder, that not create new object for every modification . 
 
-StringBuilder fulltext = new StringBuilder(); 
+StringBuilder fulltext = new StringBuilder();
+
+Console.WriteLine("Give String , For exit loop Press double enter - ");
 
 while (true)
 {
@@ -48,5 +53,14 @@ while (true)
     fulltext.Append(line);
 }
 
-
+Console.WriteLine($"Befor converting string , Type of fulltext : {fulltext.GetType()}");
 Console.WriteLine(fulltext);
+
+// converting fulltext type StringBuilder to string :
+string res =  fulltext.ToString();
+
+Console.WriteLine($"After converting string , Type of fulltext : {res.GetType()}");
+
+
+
+
