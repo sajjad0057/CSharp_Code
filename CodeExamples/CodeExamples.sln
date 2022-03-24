@@ -39,7 +39,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnumExamples", "EnumExample
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateTimeConvert", "DateTimeConvert\DateTimeConvert.csproj", "{774A7495-F5F2-4237-92DB-CDA7AB25EEEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{A6390576-F864-4E44-82F0-37DDE620B815}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{A6390576-F864-4E44-82F0-37DDE620B815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder_Example", "StringBuilder_Example\StringBuilder_Example.csproj", "{2D4680B5-CB95-437C-91E9-774D51ACE310}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{A6390576-F864-4E44-82F0-37DDE620B815}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6390576-F864-4E44-82F0-37DDE620B815}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6390576-F864-4E44-82F0-37DDE620B815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D4680B5-CB95-437C-91E9-774D51ACE310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D4680B5-CB95-437C-91E9-774D51ACE310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D4680B5-CB95-437C-91E9-774D51ACE310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D4680B5-CB95-437C-91E9-774D51ACE310}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
