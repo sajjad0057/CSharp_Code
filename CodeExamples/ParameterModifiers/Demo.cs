@@ -15,13 +15,19 @@ namespace ParameterModifiers
         public int Z { get; set; }
         
         public int  v = 0;
+        public int n = 1;
         public Demo()
         {
-           X = sum(2, 2);
-           Y = sum(2, 2, 3);
-           Z = sum(new int[] { 1, 2, 3, 4, 5, 6, 7 });
+            // Example for params parameterModifier
+            X = sum(2, 2);
+            Y = sum(2, 2, 3);
+            Z = sum(new int[] { 1, 2, 3, 4, 5, 6, 7 });
 
-           Print2(out v);
+            // Example for out parameterModifier
+            Print2(out v);
+
+            // Example for ref parameterModifier
+            Method(ref n);
 
         }
 
@@ -44,6 +50,14 @@ namespace ParameterModifiers
         public void Print2(out int Value)
         {
             Value = 5;  // if we don't set value in method , throw an exception
+        }
+
+
+
+        //The ref keyword indicates that a value is passed by reference
+        public void Method(ref int refArgument)
+        {
+            refArgument = refArgument + 44;
         }
 
 

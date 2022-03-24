@@ -3,9 +3,14 @@
 Demo d = new Demo();
 
 Console.WriteLine(d.X);
+
 Console.WriteLine(d.Y);
+
 Console.WriteLine(d.Z);
+
 Console.WriteLine(d.v);
+
+Console.WriteLine(d.n);
 
 
 
