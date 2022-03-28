@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tuple_Example", "Tuple_Exam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nullable_DataType", "Nullable_DataType\Nullable_DataType.csproj", "{E366F672-8D6C-4DB1-9895-C442C3587DB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anonymous_Object", "Anonymous_Object\Anonymous_Object.csproj", "{785BDAAD-2F83-48BC-9030-2823CA1AFE7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anonymous_Object", "Anonymous_Object\Anonymous_Object.csproj", "{785BDAAD-2F83-48BC-9030-2823CA1AFE7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics_Examples", "Generics_Examples\Generics_Examples.csproj", "{C22C7763-816E-43B9-A373-6BE3DFDFB253}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{785BDAAD-2F83-48BC-9030-2823CA1AFE7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{785BDAAD-2F83-48BC-9030-2823CA1AFE7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{785BDAAD-2F83-48BC-9030-2823CA1AFE7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C22C7763-816E-43B9-A373-6BE3DFDFB253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C22C7763-816E-43B9-A373-6BE3DFDFB253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C22C7763-816E-43B9-A373-6BE3DFDFB253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C22C7763-816E-43B9-A373-6BE3DFDFB253}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
