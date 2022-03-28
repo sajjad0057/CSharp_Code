@@ -9,7 +9,7 @@ public struct Coordinate<T,Q>    // here T, Q data type  , passed as parameter .
 
     // using generic typed in methods
 
-    public T DoSomething(Q q)  // parameter type Q , that Passes in Struct 
+    public T DoSomething<A,B>(Q q,A a , B b)  // parameter type Q , that Passes in Struct 
     {
         throw new NotImplementedException();
 
@@ -28,6 +28,10 @@ public class TestCode
         intCoordinate.X = 12;
         intCoordinate.Y = 13.0;
 
+        intCoordinate.DoSomething<int, string>(2.4, 5, "Sajjad");
+
         Coordinate<double,string> doubleCoordinate = new Coordinate<double,string> { X = 5.5, Y = "sajjad" }; // object initializer . 
+
+
     }
 }
