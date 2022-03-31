@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Generics_Examples
+{
+    public interface ICoordinate<A,B>            // here declare <A,B> Generic datatype with interface . 
+    {
+        A X { get; set; }
+        B Y { get; set; }   
+    }
+}
