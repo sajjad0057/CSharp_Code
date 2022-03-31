@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Generics_Examples
 {
-    public interface ICoordinate<A,B>            // here declare <A,B> Generic datatype with interface . 
+    public interface ICoordinate<A,B,C>            // here declare <A,B> Generic datatype with interface . 
     {
         A X { get; set; }
-        B Y { get; set; }   
+        B Y { get; set; }
+        C Z { get; set; }
     }
 }

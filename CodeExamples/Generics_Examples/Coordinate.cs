@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 namespace Generics_Examples
 {
-    public class Coordinate<T, Q> : ICoordinate<T,Q>   // Uses <T,Q> generic datatype in ICoordinate interface from Coordinate class . 
+    public class Coordinate<T, Q> : ICoordinate<T, Q, bool>   // Uses <T,Q> generic datatype in ICoordinate interface from Coordinate class . 
     {
         public T X { get; set; }
         public Q Y { get; set; }
+        public bool Z { get; set; } = true;
+
+
 
 
         // using generic typed in methods
 
-        public void DoSomething<A, B>(Q q, A a, B b)  // parameter type Q , that Passes in Struct 
+        public T DoSomething<A, B>(Q q, A a, B b)  // parameter type Q 
         {
-            Console.WriteLine($"q : {q.GetType()} ; a : {a.GetType()} ; b : {b.GetType()}");
+            return X;
 
 
         }
