@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Generics_Examples
 {
-    public class Coordinate<T, Q> : ICoordinate<T, Q, bool>   // Uses <T,Q> generic datatype in ICoordinate interface from Coordinate class . 
+    public class Coordinate<T, Q> : ICoordinate<T, Q, bool>  where T : struct       // For using constrain here T must be struct ;
     {
         public T X { get; set; }
         public Q Y { get; set; }
