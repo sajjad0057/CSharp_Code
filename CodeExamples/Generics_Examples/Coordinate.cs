@@ -19,9 +19,20 @@ namespace Generics_Examples
 
         public T DoSomething<A, B>(Q q, A a, B b)  // parameter type Q 
         {
-            return X;
+            if (true)
+            {
+                return X;
+
+            }
+            else
+            {
+                return default(T);
+            }
+
 
 
         }
+
+
     }
 }

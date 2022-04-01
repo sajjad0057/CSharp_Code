@@ -11,19 +11,27 @@ namespace Generics_Examples
 
         public T[] _items;    // declare T typed array 
 
-        private int index;
+        private int _index;
 
         public Container()
         {
             _items = new T[10];
-            index = 0;
+            _index = 0;
         }
         public void AddItem(T item)
         {
-            if (index < _items.Length)
+            if (_index < _items.Length)
             {
-                _items[index++] = item;
+                _items[_index++] = item;
             }
+        }
+
+        public T? GetItem(int index)
+        {
+            if (index < _index)
+                return _items[_index++];
+            else 
+                return default(T);            // default(dataType);  return default value of passed dataTyped. 
         }
     }
 }

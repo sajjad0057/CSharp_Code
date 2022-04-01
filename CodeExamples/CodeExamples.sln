@@ -53,9 +53,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Anonymous_Object", "Anonymo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics_Examples", "Generics_Examples\Generics_Examples.csproj", "{C22C7763-816E-43B9-A373-6BE3DFDFB253}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamOnAbstructClass", "ExamOnAbstructClass\ExamOnAbstructClass.csproj", "{EAE4050D-93B3-4FB1-90DD-523DFACC50A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamOnAbstructClass", "ExamOnAbstructClass\ExamOnAbstructClass.csproj", "{EAE4050D-93B3-4FB1-90DD-523DFACC50A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamOnInterface", "ExamOnInterface\ExamOnInterface.csproj", "{6E69D4E3-75B0-4D29-8C2B-AB2F7D8419D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamOnInterface", "ExamOnInterface\ExamOnInterface.csproj", "{6E69D4E3-75B0-4D29-8C2B-AB2F7D8419D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection_Examples", "Collection_Examples\Collection_Examples.csproj", "{DAB17A12-B8BE-4F27-826B-11788641A873}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,10 @@ Global
 		{6E69D4E3-75B0-4D29-8C2B-AB2F7D8419D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E69D4E3-75B0-4D29-8C2B-AB2F7D8419D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E69D4E3-75B0-4D29-8C2B-AB2F7D8419D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAB17A12-B8BE-4F27-826B-11788641A873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAB17A12-B8BE-4F27-826B-11788641A873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAB17A12-B8BE-4F27-826B-11788641A873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAB17A12-B8BE-4F27-826B-11788641A873}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
