@@ -63,3 +63,8 @@ void DoAthoterThing(ICollection<object> collection)
 
 
 
+IEnumerable<object> something = new List<object>();
+
+//Box b = (Box)something;   // if we use casting or Boxing / UnBoxing is this case throw an error 
+
+Box b2 = something as Box;   // here b2 set  null value  , coz, something is not Box, But does not throw an Error . 
