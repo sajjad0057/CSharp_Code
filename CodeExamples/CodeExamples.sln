@@ -57,7 +57,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamOnAbstructClass", "Exam
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamOnInterface", "ExamOnInterface\ExamOnInterface.csproj", "{6E69D4E3-75B0-4D29-8C2B-AB2F7D8419D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection_Examples", "Collection_Examples\Collection_Examples.csproj", "{DAB17A12-B8BE-4F27-826B-11788641A873}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collection_Examples", "Collection_Examples\Collection_Examples.csproj", "{DAB17A12-B8BE-4F27-826B-11788641A873}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Important_BuiltIn_Interface", "Important_BuiltIn_Interface\Important_BuiltIn_Interface.csproj", "{F3EF3840-9C71-4D9F-B8A3-90DE81A3D5E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -177,6 +179,10 @@ Global
 		{DAB17A12-B8BE-4F27-826B-11788641A873}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAB17A12-B8BE-4F27-826B-11788641A873}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAB17A12-B8BE-4F27-826B-11788641A873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3EF3840-9C71-4D9F-B8A3-90DE81A3D5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3EF3840-9C71-4D9F-B8A3-90DE81A3D5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3EF3840-9C71-4D9F-B8A3-90DE81A3D5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3EF3840-9C71-4D9F-B8A3-90DE81A3D5E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
