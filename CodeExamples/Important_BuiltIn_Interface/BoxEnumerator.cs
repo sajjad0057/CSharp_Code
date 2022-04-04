@@ -23,7 +23,7 @@ namespace Important_BuiltIn_Interface
         {
             _items = null;
             _index--;
-            // Reset();
+            //Reset();
         }
 
         public bool MoveNext()
