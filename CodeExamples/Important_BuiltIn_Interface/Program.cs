@@ -1,13 +1,11 @@
 ﻿
 using Important_BuiltIn_Interface;
 
-Box box = new Box();
+Box box = new Box(5);
 
-box._items = new object[5];
-
-box._items[0] = "hello";
-box._items[1] = "world";
-box._items[2] = 42.3;
+box.Add("hello");
+box.Add("world");
+box.Add(4.3);
 
 foreach (var item in box)
 {

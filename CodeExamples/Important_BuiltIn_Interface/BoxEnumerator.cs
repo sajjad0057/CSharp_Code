@@ -17,7 +17,7 @@ namespace Important_BuiltIn_Interface
             _items = items;
             _index = -1;
         }
-        public object Current => _items[_index];   // using lambda expression , here Current is a proparty, arrow syntax might be used as get , set func . 
+        public object Current => _items[_index];   // using lambda expression , here Current is a proparty, arrow syntax might be used as get , set functinality . 
 
         public void Dispose()    // that's cominng from IDisposable interface, becasue IEnumerator implement IDisposable interface . 
         {
