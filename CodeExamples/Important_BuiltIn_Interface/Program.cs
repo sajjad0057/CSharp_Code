@@ -91,9 +91,9 @@ Console.WriteLine($"bottle1 :: Capacity : {bottle1.Capacity} ; WaterAmount : {bo
 
 // copying bottle1 prototype we can create same as bottle1, another object from  that have same property, by this given way : 
 
-WaterBottle bottle2 = bottle1.Copy();
-WaterBottle bottle3 = bottle1.Copy();
-WaterBottle bottle4 = bottle1.Copy();
+WaterBottle bottle2 = (WaterBottle)bottle1.Clone();    // here need to casting as WaterBottle Object Cz, Clone() methods return type object .
+WaterBottle bottle3 = (WaterBottle)bottle1.Clone();
+WaterBottle bottle4 = (WaterBottle)bottle1.Clone();
 
 Console.WriteLine($"bottle2 :: Capacity : {bottle2.Capacity} ; WaterAmount : {bottle2.WaterAmount} ; Color : {bottle2.Color} ");
 Console.WriteLine($"bottle4 :: Capacity : {bottle4.Capacity} ; WaterAmount : {bottle4.WaterAmount} ; Color : {bottle4.Color} ");

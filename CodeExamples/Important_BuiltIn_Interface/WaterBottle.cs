@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Important_BuiltIn_Interface
 {
-    public class WaterBottle
+    public class WaterBottle : ICloneable
     {
         public int Capacity { get;private set; }
 
@@ -34,10 +34,9 @@ namespace Important_BuiltIn_Interface
 
 
         // this method can be used for copying this class object 
-        public WaterBottle Copy()
+        public object Clone()
         {
-            return new WaterBottle(Capacity,WaterAmount,Color);
+            return new WaterBottle(Capacity, WaterAmount, Color);
         }
-
     }
 }
