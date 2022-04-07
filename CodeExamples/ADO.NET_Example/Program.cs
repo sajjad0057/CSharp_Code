@@ -11,4 +11,15 @@ var sql = "update Students set Cgpa = 3.94 where id = 4";
 
 var query = "Select * from Students";
 
-dataUtility.ExecuteQuery(query);
+var values = dataUtility.ExecuteQuery(query);
+
+foreach (var value in values)
+{
+    foreach (var item in value.Keys)
+    {
+        Console.Write($" {item} : {value[item]} ");
+    }        
+    Console.WriteLine();
+}
+
+

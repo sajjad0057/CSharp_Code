@@ -40,7 +40,7 @@ namespace ADO.NET_Example
         }
 
 
-        public void ExecuteQuery(string query)
+        public List<Dictionary<string, object>> ExecuteQuery(string query)
         {
             using var command = _createCommand(query);
 
@@ -57,16 +57,25 @@ namespace ADO.NET_Example
                 ExecuteNonQuery is typically used for SQL statements without results (e.g., UPDATE, INSERT, DELETE etc.).
             */
 
-            SqlDataReader reader =  command.ExecuteReader();
+            List<Dictionary<string, object>> values = new List<Dictionary<string, object>>();
+
+            using SqlDataReader reader =  command.ExecuteReader();
+
+
 
             while (reader.Read())
-            {
-                int id = (int)reader["Id"];
-                string name = (string)reader["Name"];
-                decimal cgpa = (decimal)reader["Cgpa"];
-                DateTime Dob = (DateTime)reader["DateofBirth"];
-                Console.WriteLine($"Id : {id} ; Name : {name}; Cgpa : {cgpa} ; DateOfBirth : {Dob}");
+            {   
+                Dictionary<string, object> row = new Dictionary<string, object>();
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    //Console.WriteLine($"{reader.GetName(i)} : {reader.GetValue(i)}");
+                    row.Add(reader.GetName(i), reader.GetValue(i));
+                }
+                values.Add(row);
+
             }
+
+            return values;
         }
 
 
