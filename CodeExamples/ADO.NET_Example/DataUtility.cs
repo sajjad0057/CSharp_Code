@@ -10,32 +10,19 @@ namespace ADO.NET_Example
     public class DataUtility
     {
         private string _connectionString;
-
-
+     
         public DataUtility(string connectionString)
         {
             _connectionString = connectionString;
         }
 
-        public void ExecuteCommand(string sql)
+
+
+        private SqlCommand _createCommand(string sql)
         {
-            /*
-             * uses of using statement : using statement can work with IDisposable implemented classes 
-            The using statement defines a scope at the end of which an object will be disposed. 
-            */
-            using SqlConnection connection = new SqlConnection(_connectionString);  // we can pass connectionString in SqlConnection constructor.
+            SqlConnection connection = new SqlConnection(_connectionString);
 
-            // connection.ConnectionString = connectionString;
-
-
-            /*
-            we can also - pass connection object in SqlConnection constructor.
-            for this we need to pass with another parameter name CommandText like as sql statement ;
-            example:
-            SqlCommand command = new SqlCommand(sql,connection); 
-             */
-
-            using SqlCommand command = new SqlCommand();
+            SqlCommand command = new SqlCommand();
 
             command.Connection = connection;
             command.CommandText = sql;
@@ -43,20 +30,43 @@ namespace ADO.NET_Example
             if (connection.State != System.Data.ConnectionState.Open)
                 connection.Open();
 
+            return command;
+        }
+
+        public void ExecuteCommand(string sql)
+        {
+            using var command = _createCommand(sql);
+            command.ExecuteNonQuery();
+        }
+
+
+        public void ExecuteQuery(string query)
+        {
+            using var command = _createCommand(query);
 
             /*
             ExecuteNonQuery used for executing queries that does not return any data.
             ExecuteNonQuery: Executes Insert, Update, and Delete statements (DML statements) and returns the number of rows affected.
+
+            ExecuteReader: Executes the SQL query (Select statement) and returns a Reader object from SqlDataReader  which can perform a 
+            forward only traversal across the set of records being fetched.
             
-            ExecuteReader: Executes the SQL query (Select statement) and returns a Reader object which can perform a forward only traversal
-            across the set of records being fetched.
+
             different between ExecuteNonQuery and ExecuteReader :
                 ExecuteReader is used for any result set with multiple rows/columns (e.g., SELECT col1, col2 from sometable ).
                 ExecuteNonQuery is typically used for SQL statements without results (e.g., UPDATE, INSERT, DELETE etc.).
             */
 
-            command.ExecuteNonQuery();
+            SqlDataReader reader =  command.ExecuteReader();
 
+            while (reader.Read())
+            {
+                int id = (int)reader["Id"];
+                string name = (string)reader["Name"];
+                decimal cgpa = (decimal)reader["Cgpa"];
+                DateTime Dob = (DateTime)reader["DateofBirth"];
+                Console.WriteLine($"Id : {id} ; Name : {name}; Cgpa : {cgpa} ; DateOfBirth : {Dob}");
+            }
         }
 
 

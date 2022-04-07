@@ -6,7 +6,9 @@ string connectionString = "Server = DESKTOP-SU7UN5F\\SQLEXPRESS ; Database=CShar
 DataUtility dataUtility = new DataUtility(connectionString);
 
 var sql = "update Students set Cgpa = 3.94 where id = 4";
-
 //var sql = "delete from Students where id = 4";
+//dataUtility.ExecuteCommand(sql);
 
-dataUtility.ExecuteCommand(sql);
+var query = "Select * from Students";
+
+dataUtility.ExecuteQuery(query);
