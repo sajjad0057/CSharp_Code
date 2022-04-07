@@ -15,15 +15,8 @@ DataUtility dataUtility = new DataUtility(connectionString);
 
 var query = "Select * from Students";
 
-var values = dataUtility.ExecuteQuery(query);
+dataUtility.ExecuteQuery(query);
 
-foreach (var value in values)
-{
-    foreach (var item in value.Keys)
-    {
-        Console.Write($" {item} : {value[item]} ");
-    }        
-    Console.WriteLine();
-}
+
 
 

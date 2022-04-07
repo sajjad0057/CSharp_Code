@@ -40,7 +40,7 @@ namespace ADO.NET_Example
         }
 
 
-        public List<Dictionary<string, object>> ExecuteQuery(string query)
+        public void ExecuteQuery(string query)
         {
             using var command = _createCommand(query);
 
@@ -75,7 +75,14 @@ namespace ADO.NET_Example
 
             }
 
-            return values;
+            foreach (var value in values)
+            {
+                foreach (var item in value.Keys)
+                {
+                    Console.Write($" {item} : {value[item]} ");
+                }
+                Console.WriteLine();
+            }
         }
 
 
