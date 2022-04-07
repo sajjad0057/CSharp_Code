@@ -13,12 +13,14 @@ namespace ADO.NET_Example
         public void AddData()
         {
             string connectionString = "Server = DESKTOP-SU7UN5F\\SQLEXPRESS ; Database=CSharpPractice1 ; User Id = CSharpPractice1 ;Password = 123456;";
-
-            SqlConnection connection = new SqlConnection(connectionString);  // we can pass connectionString in SqlConnection constructor.
+            /*
+            The using statement defines a scope at the end of which an object will be disposed. 
+            */
+            using SqlConnection connection = new SqlConnection(connectionString);  // we can pass connectionString in SqlConnection constructor.
 
             // connection.ConnectionString = connectionString;
 
-            var sql = "insert into Students([Name],Cgpa,DateOfBirth) values('jisan',3.43,'1992-04-13')";
+            var sql = "insert into Students([Name],Cgpa,DateOfBirth) values('zibon',3.48,'1982-07-11')";
 
             /*
             we can also - pass connection object in SqlConnection constructor.
@@ -29,12 +31,13 @@ namespace ADO.NET_Example
 
              */
 
-            SqlCommand command = new SqlCommand(); 
+            using SqlCommand command = new SqlCommand(); 
 
             command.Connection = connection;
             command.CommandText = sql;
 
-            connection.Open();
+            if( connection.State != System.Data.ConnectionState.Open)
+                connection.Open();
 
 
             /*
@@ -52,7 +55,6 @@ namespace ADO.NET_Example
             */
 
             command.ExecuteNonQuery();
-
 
         }
 
