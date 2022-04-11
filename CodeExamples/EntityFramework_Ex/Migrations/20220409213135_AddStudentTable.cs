@@ -7,7 +7,7 @@ namespace EntityFramework_Ex.Migrations
 {
     public partial class AddStudentTable : Migration
     {
-        protected override void Up(MigrationBuilder migrationBuilder)
+        protected override void Up(MigrationBuilder migrationBuilder)   // Up method explain , how can be table created in DB .  
         {
             migrationBuilder.CreateTable(
                 name: "Students",
@@ -25,7 +25,7 @@ namespace EntityFramework_Ex.Migrations
                 });
         }
 
-        protected override void Down(MigrationBuilder migrationBuilder)
+        protected override void Down(MigrationBuilder migrationBuilder)    // Down method can drop table . can perfrom rollback on migrations  
         {
             migrationBuilder.DropTable(
                 name: "Students");

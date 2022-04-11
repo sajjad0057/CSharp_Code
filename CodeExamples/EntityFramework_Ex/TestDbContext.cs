@@ -17,15 +17,17 @@ namespace EntityFramework_Ex
 
         public TestDbContext()
         {
-            _connectionString = "Server = DESKTOP - SU7UN5F\\SQLEXPRESS; Database = CSharpPractice1; User Id = CSharpPractice1; Password = 123456;";
+            _connectionString = "Server = DESKTOP - SU7UN5F\\SQLEXPRESS; Database = CSharpPractice2; User Id = CSharpPractice2; Password = 123456;";
             /*
                 Assembly.GetExecutingAssembly() is .NET method from Reflection namespace , thats provides static methods.
                 it's Assembly of running project . Assembly.GetExecutingAssembly().FullName provide here FullName of Assembly .
-                Assembly means .exe/.dll file that's contain in project 
+                Assembly means .exe/.dll file that's exist in project 
             */
             _assemblyName = Assembly.GetExecutingAssembly().FullName;
 
-            Console.WriteLine($"Assembly.GetExecutingAssembly().FullName : {Assembly.GetExecutingAssembly().FullName}");
+            //Console.WriteLine($"Assembly.GetExecutingAssembly().FullName : {Assembly.GetExecutingAssembly().FullName}");
+
+            // Assembly.GetExecutingAssembly().FullName : EntityFramework_Ex, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nullAssembly.GetExecutingAssembly().FullName : EntityFramework_Ex, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
         }
 
         /*
@@ -37,7 +39,7 @@ namespace EntityFramework_Ex
             {
                 dbContextOptionsBuilder.UseSqlServer(_connectionString,m=>m.MigrationsAssembly(_assemblyName));
             }
-            base.OnConfiguring(dbContextOptionsBuilder); // overide some code from base class .  
+            base.OnConfiguring(dbContextOptionsBuilder); // override some code from base class .  
         } 
     }
 }
