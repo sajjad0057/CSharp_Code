@@ -22,7 +22,7 @@ namespace EntityFramework_Ex.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Students", x => x.Id);
-                });
+                }); 
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)    // Down method can drop table . can perfrom rollback on migrations  
