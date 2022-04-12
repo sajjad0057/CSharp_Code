@@ -17,7 +17,7 @@ namespace EntityFramework_Ex
 
         public TestDbContext()
         {
-            _connectionString = "Server = DESKTOP - SU7UN5F\\SQLEXPRESS; Database = CSharpPractice2; User Id = CSharpPractice2; Password = 123456;";
+            _connectionString = "Server = DESKTOP-SU7UN5F\\SQLEXPRESS; Database = CSharpPractice2; User Id = CSharpPractice2; Password = 123456;";
             /*
                 Assembly.GetExecutingAssembly() is .NET method from Reflection namespace , thats provides static methods.
                 it's Assembly of running project . Assembly.GetExecutingAssembly().FullName provide here FullName of Assembly .
