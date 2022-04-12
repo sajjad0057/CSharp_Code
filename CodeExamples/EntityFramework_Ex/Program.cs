@@ -14,16 +14,24 @@ TestDbContext context = new TestDbContext();
 // way 2
 
 
-//context.Students.Add(new Student { Name = "sakib", Cgpa = 4.00, DateOfBirth = new DateTime(2002, 05, 09), Address = "Dhaka" });
+// context.Students.Add(new Student { Name = "sakib", Cgpa = 4.00, DateOfBirth = new DateTime(2002, 05, 09), Address = "Dhaka" });
 
-//context.SaveChanges();
+// context.SaveChanges();
 
 
 //Retrinving and update Data from Database :
 
-student1 = context.Students.Where(x => x.Name == "sajjad").FirstOrDefault();
+student1 = context.Students.Where(x => x.Name == "sajjad").FirstOrDefault();  //FirstOrDefault() methods retrive first data  of satisfying condition or criteria 
 
-student1.Cgpa = 3.90;
+//student1.Cgpa = 3.90;
 
-context.SaveChanges();
+//context.SaveChanges();
+
+// delete or remove data from data table 
+
+context.Students.Remove(student1);
+
+context.SaveChanges();  
+
+
 
