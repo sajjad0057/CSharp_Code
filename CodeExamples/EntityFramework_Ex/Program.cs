@@ -5,7 +5,7 @@ TestDbContext context = new TestDbContext();
 #region Insert Data in DB
 
 // insert data in table Student 
-Student student1 = new Student { Name = "sajjad", Cgpa = 3.2, Address = "Rangpur", DateOfBirth = new DateTime(1991, 03, 06) };
+//Student student1 = new Student { Name = "sajjad", Cgpa = 3.2, Address = "Rangpur", DateOfBirth = new DateTime(1991, 03, 06) };
 
 // way 1  
 
@@ -17,7 +17,7 @@ Student student1 = new Student { Name = "sajjad", Cgpa = 3.2, Address = "Rangpur
 
 //context.Students.Add(new Student { Name = "sajjad", Cgpa = 3.20, DateOfBirth = new DateTime(2002, 05, 09), Address = "Rangpur" });
 
-context.Students.Add(new Student { Name = "zahan", Cgpa = 3.55, DateOfBirth = new DateTime(1998, 05, 09), Address = "pabna" });
+//context.Students.Add(new Student { Name = "zahan", Cgpa = 3.55, DateOfBirth = new DateTime(1998, 05, 09), Address = "pabna" });
 
 //context.SaveChanges();
 
@@ -25,18 +25,15 @@ context.Students.Add(new Student { Name = "zahan", Cgpa = 3.55, DateOfBirth = ne
 
 
 
-
-
-
 #region Retrive and Update Data 
 
 //Retriving and update Data from Database :
 
-Student student2 = context.Students.Where(x => x.Name == "sakib").FirstOrDefault();  //FirstOrDefault() methods retrive first data  of satisfying condition or criteria 
+//Student student2 = context.Students.Where(x => x.Name == "sakib").FirstOrDefault();  //FirstOrDefault() methods retrive first data  of satisfying condition or criteria 
 
-student2.Cgpa = 3.90;
+//student2.Cgpa = 3.90;
 
-context.SaveChanges();
+//context.SaveChanges();
 
 #endregion
 
@@ -50,8 +47,6 @@ context.SaveChanges();
 //    context.Students.Remove(student1);
 //    context.SaveChanges();
 //}
-
-
 
 #endregion 
 

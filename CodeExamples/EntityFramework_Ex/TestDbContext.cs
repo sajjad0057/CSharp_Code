@@ -13,7 +13,12 @@ namespace EntityFramework_Ex
         private string _connectionString;
 
         private string _assemblyName;
-        public DbSet<Student> Students { get; set; }     //using DbSet<Student> generic class  here, Student class connect with DbContext class . 
+
+        //using DbSet<T> generic class  here, T class connect with DbContext class . 
+        public DbSet<Student> Students { get; set; } 
+        public DbSet<Course> Courses { get; set; }
+
+
 
         public TestDbContext()
         {
