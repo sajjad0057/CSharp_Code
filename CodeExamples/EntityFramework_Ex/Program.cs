@@ -120,7 +120,7 @@ Console.WriteLine("Courses Data : ");
 // Console.WriteLine(existingCourse.Title);
 
 
-List<Course> courseList = context.Courses.Include(x => x.Topics).ToList();
+List<Course> courseList = context.Courses.Include(x => x.Topics).ToList();  // Include() access child data of (Here Courses) table 
 
 foreach (Course course in courseList)
 {
@@ -131,10 +131,6 @@ foreach (Course course in courseList)
         Console.WriteLine($"{topic.Detail}");
     }
 };
-
-
-
-
 
 #endregion
 

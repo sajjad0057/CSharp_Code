@@ -32,7 +32,8 @@ namespace EntityFramework_Ex
 
             //Console.WriteLine($"Assembly.GetExecutingAssembly().FullName : {Assembly.GetExecutingAssembly().FullName}");
 
-            // Assembly.GetExecutingAssembly().FullName : EntityFramework_Ex, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nullAssembly.GetExecutingAssembly().FullName : EntityFramework_Ex, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+            // Assembly.GetExecutingAssembly().FullName :
+            // EntityFramework_Ex, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nullAssembly.GetExecutingAssembly().FullName : EntityFramework_Ex, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
         }
 
         /*
@@ -52,9 +53,15 @@ namespace EntityFramework_Ex
         //another way to Entity class connect with DbContext class . and set Entity model name for database.
         protected override void OnModelCreating(ModelBuilder builder)
         {
-            // here set Topics table name in database for Topic Entity
+            // here set model / Entity table name in database for model/ Entity
 
             builder.Entity<Topic>().ToTable("Topics");
+
+            builder.Entity<CourseStudents>().ToTable("CourseStudents");
+
+            // create CourseStudents model/Entity primary key as composite key (using CourseId and StudentId from Courses and Students model / Entity)
+           
+            builder.Entity<CourseStudents>().HasKey(cs => new { cs.CourseId, cs.StudentId });
 
             base.OnModelCreating(builder);
         }

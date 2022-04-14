@@ -17,5 +17,11 @@ namespace EntityFramework_Ex
         public List<Topic> Topics { get; set; }
 
 
+        // For creating ManyToMany relations with Sudents and Courses Model/table/Entity 
+
+        public List<CourseStudents> Students { get; set; } 
+
+
+
     }
 }
