@@ -8,6 +8,7 @@ namespace EntityFramework_Ex
 {
     public class Course
     {
+        // thats are conventional relationship 
         public int Id { get; set; } 
         public string Title { get; set; }
         public double Fee { get; set; }

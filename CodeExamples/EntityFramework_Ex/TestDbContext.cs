@@ -14,7 +14,8 @@ namespace EntityFramework_Ex
 
         private string _assemblyName;
 
-        //using DbSet<T> generic class  here, T class connect with DbContext class . 
+        //using DbSet<T> generic class  here, T class connect with DbContext class .
+        // Only which classes are set with DbSet<T> class, these classes are can perform CRUD operation in Database
         public DbSet<Student> Students { get; set; } 
         public DbSet<Course> Courses { get; set; }
 

@@ -6,7 +6,7 @@ TestDbContext context = new TestDbContext();
 #region Insert Data in DB
 
 // insert data in table Student 
-//Student student1 = new Student { Name = "sajjad", Cgpa = 3.2, Address = "Rangpur", DateOfBirth = new DateTime(1991, 03, 06) };
+//Student student1 = new Student { Name = "sajjad", Cgpa = 3.2, Address = "Rangpur", DateOfBirth = new DateTime(1991,03,06) };
 
 // way 1  
 
@@ -14,11 +14,11 @@ TestDbContext context = new TestDbContext();
 
 // way 2
 
-//context.Students.Add(new Student { Name = "sakib", Cgpa = 3.05, DateOfBirth = new DateTime(2002, 05, 09), Address = "Dhaka" });
+//context.Students.Add(new Student { Name = "sakib", Cgpa = 3.05, DateOfBirth = new DateTime(2002,05,09), Address = "Dhaka" });
 
-//context.Students.Add(new Student { Name = "sajjad", Cgpa = 3.20, DateOfBirth = new DateTime(2002, 05, 09), Address = "Rangpur" });
+//context.Students.Add(new Student { Name = "sajjad", Cgpa = 3.20, DateOfBirth = new DateTime(2002,05,09), Address = "Rangpur" });
 
-//context.Students.Add(new Student { Name = "zahan", Cgpa = 3.55, DateOfBirth = new DateTime(1998, 05, 09), Address = "pabna" });
+//context.Students.Add(new Student { Name = "zahan", Cgpa = 3.55, DateOfBirth = new DateTime(1998,05,09), Address = "pabna" });
 
 //context.SaveChanges();
 
@@ -78,7 +78,7 @@ foreach (Student student in studentList)
 //{
 //    Title = "C#",
 //    Fee = 8000,
-//    ClassStartDate = new DateTime(2022 - 02 - 14),
+//    ClassStartDate = new DateTime(2022,02,14),
 //    Topics = new List<Topic>
 //    {
 //        new Topic{Detail = "Getting started"},
@@ -95,11 +95,23 @@ foreach (Student student in studentList)
 //{
 //    Title = "Java",
 //    Fee = 10000,
-//    ClassStartDate = new DateTime(2021 - 4 - 3),
+//    ClassStartDate = new DateTime(2021,4,3),
 //    Topics = new List<Topic>
 //        {
 //        new Topic{Detail = "Getting Started Java"},
 //        new Topic{Detail = "Advanced Java"},
+//        }
+//});
+
+//context.Courses.Add(new Course
+//{
+//    Title = "Python",
+//    Fee = 10000,
+//    ClassStartDate = new DateTime(2021,4,3),
+//    Topics = new List<Topic>
+//        {
+//        new Topic{Detail = "Getting Started Python"},
+//        new Topic{Detail = "Python For MachineLearning"},
 //        }
 //});
 
@@ -114,12 +126,6 @@ foreach (Student student in studentList)
 
 Console.WriteLine("Courses Data : ");
 
-//Course existingCourse = context.Courses.Where(x => x.Id == 1)
-//    .Include(y=>y.Topics)
-//    .FirstOrDefault();
-// Console.WriteLine(existingCourse.Title);
-
-
 List<Course> courseList = context.Courses.Include(x => x.Topics).ToList();  // Include() access child data of (Here Courses) table 
 
 foreach (Course course in courseList)
@@ -133,6 +139,44 @@ foreach (Course course in courseList)
 };
 
 #endregion
+
+#region Create ManyToMany RelationShip and insert data 
+
+Course existingCourse = context.Courses.Where(x => x.Id == 1)
+    .Include(y => y.Topics)
+    .FirstOrDefault();
+
+Console.WriteLine(existingCourse.Title);
+
+Student existingStudent1 = context.Students.Where(x => x.Id == 3).FirstOrDefault();
+
+
+existingCourse.Students = new List<CourseStudents>
+{
+   // new CourseStudents{ Student = existingStudent1,EnrollDate = new DateTime(2022,1,1) },  // here set existing student of Student Table 
+
+    // Set new Student in CourseStudents Pivot table/model/entity
+
+    new CourseStudents{ Student = new Student
+    { Name = "Nafiul Fatta",
+      Cgpa = 3.94,
+      Address = "Gazipur" ,
+      DateOfBirth = new DateTime(1997,04,06),
+      
+    },
+
+    EnrollDate = new DateTime(2022,3,1),
+  }
+
+};
+
+context.SaveChanges();
+
+
+
+#endregion
+
+
 
 
 
