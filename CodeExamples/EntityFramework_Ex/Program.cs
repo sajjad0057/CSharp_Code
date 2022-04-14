@@ -142,35 +142,35 @@ foreach (Course course in courseList)
 
 #region Create ManyToMany RelationShip and insert data 
 
-Course existingCourse = context.Courses.Where(x => x.Id == 1)
-    .Include(y => y.Topics)
-    .FirstOrDefault();
+//Course existingCourse = context.Courses.Where(x => x.Id == 1)
+//    .Include(y => y.Topics)
+//    .FirstOrDefault();
 
-Console.WriteLine(existingCourse.Title);
+//Console.WriteLine(existingCourse.Title);
 
-Student existingStudent1 = context.Students.Where(x => x.Id == 3).FirstOrDefault();
+//Student existingStudent1 = context.Students.Where(x => x.Id == 3).FirstOrDefault();
 
 
-existingCourse.Students = new List<CourseStudents>
-{
-   // new CourseStudents{ Student = existingStudent1,EnrollDate = new DateTime(2022,1,1) },  // here set existing student of Student Table 
+//existingCourse.Students = new List<CourseStudents>
+//{
+//    new CourseStudents{ Student = existingStudent1,EnrollDate = new DateTime(2022,1,1) },  // here set existing student of Student Table 
 
-    // Set new Student in CourseStudents Pivot table/model/entity
+//     Set new Student in CourseStudents Pivot table/model/entity
 
-    new CourseStudents{ Student = new Student
-    { Name = "Nafiul Fatta",
-      Cgpa = 3.94,
-      Address = "Gazipur" ,
-      DateOfBirth = new DateTime(1997,04,06),
-      
-    },
+//    new CourseStudents{ Student = new Student
+//    { Name = "Nafiul Fatta",
+//      Cgpa = 3.94,
+//      Address = "Gazipur" ,
+//      DateOfBirth = new DateTime(1997,04,06),
 
-    EnrollDate = new DateTime(2022,3,1),
-  }
+//    },
 
-};
+//    EnrollDate = new DateTime(2022,3,1),
+//  }
 
-context.SaveChanges();
+//};
+
+//context.SaveChanges();
 
 
 
