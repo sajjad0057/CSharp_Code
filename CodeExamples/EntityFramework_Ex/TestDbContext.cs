@@ -47,6 +47,17 @@ namespace EntityFramework_Ex
                 dbContextOptionsBuilder.UseSqlServer(_connectionString,m=>m.MigrationsAssembly(_assemblyName));
             }
             base.OnConfiguring(dbContextOptionsBuilder); // override some code from base class .  
-        } 
+        }
+
+        //another way to Entity class connect with DbContext class . and set Entity model name for database
+        
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            // here set Topics table name in database for Topic Entity
+            
+            builder.Entity<Topic>().ToTable("Topics");
+        }
+
+
     }
 }
