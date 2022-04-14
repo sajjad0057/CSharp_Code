@@ -38,8 +38,7 @@ namespace EntityFramework_Ex
         }
 
         /*
-            OnConfiguring method configuring database connection with Entity Framework .
-            
+            Write Fluent API configurations here.     
             DbContextOptionsBuilder  Provides a simple API surface for configuring DbContextOptions. 
         */
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
@@ -63,6 +62,27 @@ namespace EntityFramework_Ex
             // create CourseStudents model/Entity primary key as composite key (using CourseId and StudentId from Courses and Students model / Entity)
            
             builder.Entity<CourseStudents>().HasKey(cs => new { cs.CourseId, cs.StudentId });
+
+
+            // Using Fluent API Create OneToMany Relationship between Courses and Topics Model/Entity
+
+            builder.Entity<Course>()
+                .HasMany(p => p.Topics)
+                .WithOne(i => i.Course);
+
+            // Using Fluent API Create ManyToMany Relationship between Students and Courses Model/Entity
+
+            builder.Entity<CourseStudents>()
+                .HasOne(i => i.Course)
+                .WithMany(p => p.Students)
+                .HasForeignKey(pc => pc.CourseId);
+
+            builder.Entity<CourseStudents>()
+                .HasOne(i=>i.Student)
+                .WithMany(c =>c.Courses)
+                .HasForeignKey(pc =>pc.StudentId);
+
+
 
             base.OnModelCreating(builder);
         }

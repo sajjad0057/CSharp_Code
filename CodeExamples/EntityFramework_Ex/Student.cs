@@ -8,6 +8,8 @@ namespace EntityFramework_Ex
 {
     public class Student    // here Student Class is called Entity , By this class In Entity Framework will make a table in database .
     {
+
+        // thats are conventional relationship 
         public int Id { get; set; }
         public string Name { get; set; }
         public double Cgpa { get; set; }
