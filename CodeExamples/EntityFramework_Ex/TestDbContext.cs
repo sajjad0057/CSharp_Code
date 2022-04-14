@@ -49,13 +49,14 @@ namespace EntityFramework_Ex
             base.OnConfiguring(dbContextOptionsBuilder); // override some code from base class .  
         }
 
-        //another way to Entity class connect with DbContext class . and set Entity model name for database
-        
+        //another way to Entity class connect with DbContext class . and set Entity model name for database.
         protected override void OnModelCreating(ModelBuilder builder)
         {
             // here set Topics table name in database for Topic Entity
             
             builder.Entity<Topic>().ToTable("Topics");
+
+            base.OnModelCreating(builder);
         }
 
 
