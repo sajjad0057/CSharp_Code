@@ -1,4 +1,5 @@
 ﻿using EntityFramework_Ex;
+using Microsoft.EntityFrameworkCore;
 
 TestDbContext context = new TestDbContext();
 
@@ -68,6 +69,72 @@ foreach (Student student in studentList)
 {
     Console.WriteLine($"Name : {student.Name} ; Cgpa : {student.Cgpa} ; Address : {student.Address} ; DateOfBirth : {student.DateOfBirth}");
 }
+
+#endregion
+
+#region Insert Data in Course Table 
+
+//Course course1 = new Course
+//{
+//    Title = "C#",
+//    Fee = 8000,
+//    ClassStartDate = new DateTime(2022 - 02 - 14),
+//    Topics = new List<Topic>
+//    {
+//        new Topic{Detail = "Getting started"},
+//        new Topic{Detail = "Advanced Topic"}
+//           //here CourseId set automatically cz, Topics list  child of Course . so detect Course Id and select automatic .
+//    }
+//};
+
+//context.Courses.Add(course1);
+
+////another way to set data 
+
+//context.Courses.Add(new Course
+//{
+//    Title = "Java",
+//    Fee = 10000,
+//    ClassStartDate = new DateTime(2021 - 4 - 3),
+//    Topics = new List<Topic>
+//        {
+//        new Topic{Detail = "Getting Started Java"},
+//        new Topic{Detail = "Advanced Java"},
+//        }
+//});
+
+
+//context.SaveChanges();
+
+
+#endregion
+
+
+#region Retrive data from Course table 
+
+Console.WriteLine("Courses Data : ");
+
+//Course existingCourse = context.Courses.Where(x => x.Id == 1)
+//    .Include(y=>y.Topics)
+//    .FirstOrDefault();
+// Console.WriteLine(existingCourse.Title);
+
+
+List<Course> courseList = context.Courses.Include(x=>x.Topics).ToList();
+
+foreach (Course course in courseList)
+{
+    Console.WriteLine($"Course Name : {course.Title} ; Course Fee : {course.Fee} ; Class Start : {course.ClassStartDate}");
+    Console.WriteLine("Course Topics : ");
+    foreach (Topic topic in course?.Topics)
+    {
+        Console.WriteLine($"{topic.Detail}");
+    }
+};
+
+
+
+
 
 #endregion
 

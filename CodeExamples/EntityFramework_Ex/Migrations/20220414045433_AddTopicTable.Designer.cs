@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFramework_Ex.Migrations
 {
     [DbContext(typeof(TestDbContext))]
-    [Migration("20220414031225_AddTopicTable")]
+    [Migration("20220414045433_AddTopicTable")]
     partial class AddTopicTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -99,7 +99,7 @@ namespace EntityFramework_Ex.Migrations
             modelBuilder.Entity("EntityFramework_Ex.Topic", b =>
                 {
                     b.HasOne("EntityFramework_Ex.Course", "Course")
-                        .WithMany("topics")
+                        .WithMany("Topics")
                         .HasForeignKey("CourseID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -109,7 +109,7 @@ namespace EntityFramework_Ex.Migrations
 
             modelBuilder.Entity("EntityFramework_Ex.Course", b =>
                 {
-                    b.Navigation("topics");
+                    b.Navigation("Topics");
                 });
 #pragma warning restore 612, 618
         }

@@ -53,7 +53,7 @@ namespace EntityFramework_Ex
         protected override void OnModelCreating(ModelBuilder builder)
         {
             // here set Topics table name in database for Topic Entity
-            
+
             builder.Entity<Topic>().ToTable("Topics");
 
             base.OnModelCreating(builder);

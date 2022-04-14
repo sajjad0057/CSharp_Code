@@ -97,7 +97,7 @@ namespace EntityFramework_Ex.Migrations
             modelBuilder.Entity("EntityFramework_Ex.Topic", b =>
                 {
                     b.HasOne("EntityFramework_Ex.Course", "Course")
-                        .WithMany("topics")
+                        .WithMany("Topics")
                         .HasForeignKey("CourseID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -107,7 +107,7 @@ namespace EntityFramework_Ex.Migrations
 
             modelBuilder.Entity("EntityFramework_Ex.Course", b =>
                 {
-                    b.Navigation("topics");
+                    b.Navigation("Topics");
                 });
 #pragma warning restore 612, 618
         }

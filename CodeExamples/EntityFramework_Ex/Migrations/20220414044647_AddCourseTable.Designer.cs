@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFramework_Ex.Migrations
 {
     [DbContext(typeof(TestDbContext))]
-    [Migration("20220414013808_AddCourseTable")]
+    [Migration("20220414044647_AddCourseTable")]
     partial class AddCourseTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
