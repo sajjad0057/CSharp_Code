@@ -14,24 +14,52 @@ TestDbContext context = new TestDbContext();
 // way 2
 
 
-// context.Students.Add(new Student { Name = "sakib", Cgpa = 4.00, DateOfBirth = new DateTime(2002, 05, 09), Address = "Dhaka" });
+//context.Students.Add(new Student { Name = "sakib", Cgpa = 3.05, DateOfBirth = new DateTime(2002, 05, 09), Address = "Dhaka" });
 
-// context.SaveChanges();
+//context.Students.Add(new Student { Name = "sajjad", Cgpa = 3.20, DateOfBirth = new DateTime(2002, 05, 09), Address = "Rangpur" });
+
+context.Students.Add(new Student { Name = "zahan", Cgpa = 3.55, DateOfBirth = new DateTime(1998, 05, 09), Address = "pabna" });
+
+context.SaveChanges();
 
 
-//Retrinving and update Data from Database :
 
-student1 = context.Students.Where(x => x.Name == "sajjad").FirstOrDefault();  //FirstOrDefault() methods retrive first data  of satisfying condition or criteria 
 
-//student1.Cgpa = 3.90;
+//Retriving and update Data from Database :
 
-//context.SaveChanges();
+Student student2 = context.Students.Where(x => x.Name == "sakib").FirstOrDefault();  //FirstOrDefault() methods retrive first data  of satisfying condition or criteria 
+
+student2.Cgpa = 3.90;
+
+context.SaveChanges();
 
 // delete or remove data from data table 
 
-context.Students.Remove(student1);
+//if(student1 != null)
+//{
+//    context.Students.Remove(student1);
+//    context.SaveChanges();
+//}
 
-context.SaveChanges();  
+
+
+// Get all data as a list :
+
+Console.WriteLine("List of Students : ");
+
+//List<Student > studentList = context.Students.ToList();
+
+// Apply filtering : 
+
+List<Student> studentList = context.Students.Where(x => x.Cgpa > 3.5).ToList();
+
+
+foreach (Student student in studentList)
+{
+    Console.WriteLine($"Name : {student.Name} ; Cgpa : {student.Cgpa} ; Address : {student.Address} ; DateOfBirth : {student.DateOfBirth}");
+}
+
+
 
 
 

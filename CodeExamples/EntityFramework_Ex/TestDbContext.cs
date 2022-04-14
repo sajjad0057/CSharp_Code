@@ -32,6 +32,8 @@ namespace EntityFramework_Ex
 
         /*
             OnConfiguring method configuring database connection with Entity Framework .
+            
+            DbContextOptionsBuilder  Provides a simple API surface for configuring DbContextOptions. 
         */
         protected override void OnConfiguring(DbContextOptionsBuilder dbContextOptionsBuilder)
         {
