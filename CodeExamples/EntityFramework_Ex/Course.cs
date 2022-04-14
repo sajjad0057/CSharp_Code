@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace EntityFramework_Ex
 {
-    internal class Course
+    public class Course
     {
+        public int Id { get; set; } 
+        public string Title { get; set; }
+        public double Fee { get; set; }
+        public DateTime ClassStartDate { get; set; }
+
     }
 }
