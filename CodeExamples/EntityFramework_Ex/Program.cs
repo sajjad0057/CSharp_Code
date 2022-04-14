@@ -120,7 +120,7 @@ Console.WriteLine("Courses Data : ");
 // Console.WriteLine(existingCourse.Title);
 
 
-List<Course> courseList = context.Courses.Include(x=>x.Topics).ToList();
+List<Course> courseList = context.Courses.Include(x => x.Topics).ToList();
 
 foreach (Course course in courseList)
 {
