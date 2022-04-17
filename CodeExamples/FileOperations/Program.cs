@@ -27,13 +27,13 @@ https://www.c-sharpcorner.com/UploadFile/rohatash/working-with-the-fileinfo-clas
 #region  check file exists or not / and How delete File :
 // check file exists or not :
 
-if (File.Exists(@"F:\CSharp_Code\CodeExamples\FileOperations\hello.txt"))
-{
-    Console.WriteLine("Exists file");
-    //File.Delete(@"F:\CSharp_Code\CodeExamples\FileOperations\hello.txt");  // using delete() method carefully . is't can destroyed given path .
-}
-else
-    Console.WriteLine("File doesn't exists !");
+//if (File.Exists(@"F:\CSharp_Code\CodeExamples\FileOperations\hello.txt"))
+//{
+//    Console.WriteLine("Exists file");
+//    //File.Delete(@"F:\CSharp_Code\CodeExamples\FileOperations\hello.txt");  // using delete() method carefully . is't can destroyed given path .
+//}
+//else
+//    Console.WriteLine("File doesn't exists !");
 
 #endregion
 
@@ -82,7 +82,7 @@ Stream is One type of Connection Object. FileStream  It is used to read from and
 
 #endregion
 
-#region  Perform File Operation using FileInfo() object ( It's using (Object) better than static approach ).
+#region  Perform File Operation using FileInfo() object ( using (Object) better than static approach ).
 
 // //Another way ( By creating object ) to Copy file to another one . we can aslo do all File Operation by creating FileInfo() Object. 
 
@@ -98,6 +98,41 @@ Stream is One type of Connection Object. FileStream  It is used to read from and
 
 #endregion
 
+#region Work With Directory using static Approach.
+
+//Directory.CreateDirectory(@"F:\CSharp_Code\CodeExamples\FileOperations\New Folder");   // Directory.CreateDirectory() create a new directory 
+
+//string currentDirectory = Directory.GetCurrentDirectory();   // return current directory or path route .Basicaly it's return  path routh where exists .exe / .dll file
+
+//Console.WriteLine(currentDirectory);
+
+#endregion
+
+#region Work With Directory ,Creating Object then work with this object -  Approach ( using (Object) better than static approach ).
+
+string currentDirectoy = Directory.GetCurrentDirectory();
+
+DirectoryInfo directoryInfo = new DirectoryInfo(currentDirectoy);  // creating directoryInfo object here
+
+/*
+here every Parent are return Onetimes Up directory or path 
+*/
+ 
+FileInfo[] files = directoryInfo.Parent.Parent.Parent.GetFiles();  // here return all files path/directories in FileInfo[] array that are exists in this directory . 
+
+foreach (FileInfo file in files)
+{
+    Console.WriteLine(file.Name);
+}
+
+DirectoryInfo[] folders = directoryInfo.Parent.Parent.Parent.GetDirectories();  // here return all folder directories in DirectoryInfo[] array,that are exists in this directory . 
+
+foreach (DirectoryInfo folder in folders)
+{
+    Console.WriteLine(folder.Name);
+}
+
+#endregion
 
 
 
