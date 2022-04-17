@@ -63,7 +63,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Important_BuiltIn_Interface
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADO.NET_Example", "ADO.NET_Example\ADO.NET_Example.csproj", "{A40E3B99-7952-405D-BDBC-1C4237214296}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework_Ex", "EntityFramework_Ex\EntityFramework_Ex.csproj", "{41FF483F-2E2F-42E6-ABD7-D76828D20A82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework_Ex", "EntityFramework_Ex\EntityFramework_Ex.csproj", "{41FF483F-2E2F-42E6-ABD7-D76828D20A82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOperations", "FileOperations\FileOperations.csproj", "{5F4E1DC9-FE12-4F9A-90DE-4E8A3C99526D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -195,6 +197,10 @@ Global
 		{41FF483F-2E2F-42E6-ABD7-D76828D20A82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41FF483F-2E2F-42E6-ABD7-D76828D20A82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41FF483F-2E2F-42E6-ABD7-D76828D20A82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4E1DC9-FE12-4F9A-90DE-4E8A3C99526D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4E1DC9-FE12-4F9A-90DE-4E8A3C99526D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4E1DC9-FE12-4F9A-90DE-4E8A3C99526D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4E1DC9-FE12-4F9A-90DE-4E8A3C99526D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
