@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practice_Generics
+{
+    public abstract class NodeBase<T, Q> : Node<T, Q>, INode<T, Q> where T : class
+    {
+        public void Add(T item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Remove(T item)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
