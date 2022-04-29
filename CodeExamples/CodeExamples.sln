@@ -67,9 +67,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework_Ex", "Entit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileOperations", "FileOperations\FileOperations.csproj", "{5F4E1DC9-FE12-4F9A-90DE-4E8A3C99526D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_Generics", "Practice_Generics\Practice_Generics.csproj", "{A93F09F5-7275-4667-86DA-8E768469826A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_Generics", "Practice_Generics\Practice_Generics.csproj", "{A93F09F5-7275-4667-86DA-8E768469826A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prectice_ADO.NET", "Prectice_ADO.NET\Prectice_ADO.NET.csproj", "{D564FD65-125A-4D64-BB7F-B6024C7FB0CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prectice_ADO.NET", "Prectice_ADO.NET\Prectice_ADO.NET.csproj", "{D564FD65-125A-4D64-BB7F-B6024C7FB0CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{09591FB1-851A-48C8-82DD-83FD6431F5BA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
