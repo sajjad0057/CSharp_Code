@@ -23,6 +23,7 @@ namespace Indexers_Features
                 }
                 return null;
             }
+
             set
             {
                for (var i = 0; i < keys.Count; i++)
@@ -32,6 +33,35 @@ namespace Indexers_Features
                         keys[i] = value;
                     }
                }
+
+
+            }
+        }
+
+        //// overload indexer typed 
+        public Key this[int keyCode]
+        {
+            get
+            {
+                foreach (var key in keys)
+                {
+                    if (key.AsciiValue == keyCode)
+                    {
+                        return key;
+                    }
+                }
+                return null;
+            }
+
+            set
+            {
+                for (var i = 0; i < keys.Count; i++)
+                {
+                    if (keys[i].AsciiValue == keyCode)
+                    {
+                        keys[i] = value;
+                    }
+                }
 
 
             }
