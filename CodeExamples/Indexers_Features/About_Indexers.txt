@@ -1,0 +1,166 @@
+﻿-----------------------------------------------------------------------------------------------------------------------------
+C# indexers are usually known as smart arrays. A C# indexer is a class property that allows you to access a member
+variable of a class or struct using the features of an array. In C#, indexers are created using this keyword. 
+Indexers in C# are applicable on both classes and structs
+-----------------------------------------------------------------------------------------------------------------------------
+Defining an indexer allows you to create a class like that can allows its items to be accessed an array.
+Instances of that class can be accessed using the [] array access operator.
+-----------------------------------------------------------------------------------------------------------------------------
+
+===========
+Syntax: 
+===========
+
+[access_modifier] [return_type] this [argument_list]
+{
+  get 
+  {
+     // get block code
+  }
+  set 
+  {
+    // set block code
+  }
+
+}
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+======================
+In the above syntax:
+======================
+
+access_modifier: It can be public, private, protected or internal.
+return_type: It can be any valid C# type.
+this: It is the keyword which points to the object of the current class.
+argument_list: This specifies the parameter list of the indexer.
+get{ } and set { }: These are the accessors.
+
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+Example: 
+
+
+// C# program to illustrate the Indexer
+using System;
+ 
+// class declaration
+class IndexerCreation
+{
+ 
+    // class members
+    private string[] val = new string[3];
+     
+    // Indexer declaration
+    // public - access modifier
+    // string - the return type of the Indexer
+      // this - is the keyword having a parameters list
+    public string this[int index]
+    {
+ 
+        // get Accessor
+        // retrieving the values
+        // stored in val[] array
+        // of strings
+        get
+        {
+ 
+            return val[index];
+        }
+ 
+        // set Accessor
+        // setting the value at
+        // passed index of val
+        set
+        {
+ 
+            // value keyword is used
+            // to define the value
+            // being assigned by the
+            // set indexer.
+            val[index] = value;
+        }
+    }
+}
+ 
+// Driver Class
+class main {
+     
+    // Main Method
+    public static void Main() {
+         
+        // creating an object of parent class which
+        // acts as primary address for using Indexer
+        IndexerCreation ic = new IndexerCreation();
+ 
+        // Inserting values in ic[]
+        // Here we are using the object
+        // of class as an array
+        ic[0] = "C";
+        ic[1] = "CPP";
+        ic[2] = "CSHARP";
+ 
+        Console.Write("Printing values stored in objects used as arrays\n");
+         
+        // printing values
+        Console.WriteLine("First value = {0}", ic[0]);
+        Console.WriteLine("Second value = {0}", ic[1]);
+        Console.WriteLine("Third value = {0}", ic[2]);
+     
+    }
+}
+Output:  
+
+Printing values stored in objects used as arrays
+First value = C
+Second value = CPP
+Third value = CSHARP
+
+-------------------------------------------------------------------------------------------------------------------
+================================
+Important Points About Indexers: 
+================================
+
+- There are two types of Indexers i.e. One Dimensional Indexer & MultiDimensional Indexer. The above discussed is One Dimensional Indexer.
+
+- Indexers can be overloaded.
+
+- These are different from Properties.
+
+- This enables the object to be indexed in a similar way to arrays.
+
+- A set accessor will always assign the value while the get accessor will return the value.
+
+- “this” keyword is always used to declare an indexer.
+
+- To define the value being assigned by the set indexer, ” value” keyword is used.
+
+- Indexers are also known as the Smart Arrays or Parameterized Property in C#.
+
+- Indexer can’t be a static member as it is an instance member of the class.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+                            ==============================================
+                              Difference between Indexers and Properties
+                            ==============================================
+
+--------------------------------------------------------------------------------------------------------------------------
+               Indexers                                                        Properties
+==========================================================================================================================
+Indexers are created with this keyword.                           Properties don't require this keyword.
+--------------------------------------------------------------------------------------------------------------------------
+Indexers are identified by signature.                             Properties are identified by their names.
+--------------------------------------------------------------------------------------------------------------------------
+Indexers are accessed using indexes.                              Properties are accessed by their names.
+--------------------------------------------------------------------------------------------------------------------------
+Indexer are instance member, so can't be static.                  Properties can be static as well as instance members.
+--------------------------------------------------------------------------------------------------------------------------
+A get accessor of an indexer has the same formal                  A get accessor of a property has no parameters.
+parameter list as the indexer.
+--------------------------------------------------------------------------------------------------------------------------
+A set accessor of an indexer has the same formal                  A set accessor of a property contains the implicit
+parameter list as the indexer, in addition to                     value parameter.
+the value parameter.
+--------------------------------------------------------------------------------------------------------------------------

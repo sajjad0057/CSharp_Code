@@ -39,6 +39,7 @@ TestDbContext context = new TestDbContext();
 #endregion
 
 
+
 #region Delete or Remove Data 
 
 // delete or remove data from data table 
@@ -50,6 +51,7 @@ TestDbContext context = new TestDbContext();
 //}
 
 #endregion 
+
 
 
 #region  Retriving Data as a List 
@@ -71,6 +73,8 @@ foreach (Student student in studentList)
 }
 
 #endregion
+
+
 
 #region Insert Data in Course Table 
 
@@ -122,6 +126,7 @@ foreach (Student student in studentList)
 #endregion
 
 
+
 #region Retrive data from Course table 
 
 Console.WriteLine("Courses Data : ");
@@ -139,6 +144,8 @@ foreach (Course course in courseList)
 };
 
 #endregion
+
+
 
 #region Create ManyToMany RelationShip and insert data 
 
