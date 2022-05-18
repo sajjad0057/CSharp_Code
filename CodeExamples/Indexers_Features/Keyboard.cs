@@ -8,7 +8,7 @@ namespace Indexers_Features
 {
     public class Keyboard
     {
-        public List<Key> keys;
+        public List<Key>? keys;
 
         public Key this[char keyChar]
         {

@@ -8,8 +8,18 @@ namespace Indexers_Features
 {
     public class Key
     {
-        public int AsciiValue { get; set; }
-        public char KeyCharacter { get; set; }
+        public int? AsciiValue { get; set; }
+        public char? KeyCharacter { get; set; }
+
+        public Key(int asciiValue)
+        {
+            AsciiValue = asciiValue;
+        }
+
+        public Key(char keyCharacter)
+        {
+            KeyCharacter = keyCharacter;
+        }
 
     }
 }

@@ -134,7 +134,7 @@ Important Points About Indexers:
 
 - “this” keyword is always used to declare an indexer.
 
-- To define the value being assigned by the set indexer, ” value” keyword is used.
+- To define the value being assigned by the set indexer, " value " keyword is used.
 
 - Indexers are also known as the Smart Arrays or Parameterized Property in C#.
 
