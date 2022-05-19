@@ -8,13 +8,13 @@ namespace Indexers_Features
 {
     public class Keyboard
     {
-        public List<Key>? keys;
+        public List<Key>? Keys;
 
         public Key this[char keyChar]
         {
             get
             {
-                foreach (var key in keys)
+                foreach (var key in Keys)
                 {
                     if (key.KeyCharacter == keyChar)
                     {
@@ -26,11 +26,11 @@ namespace Indexers_Features
 
             set
             {
-               for (var i = 0; i < keys.Count; i++)
+               for (var i = 0; i < Keys.Count; i++)
                {
-                    if (keys[i].KeyCharacter == keyChar)
+                    if (Keys[i].KeyCharacter == keyChar)
                     {
-                        keys[i] = value;
+                        Keys[i] = value;
                     }
                }
 
@@ -43,7 +43,7 @@ namespace Indexers_Features
         {
             get
             {
-                foreach (var key in keys)
+                foreach (var key in Keys)
                 {
                     if (key.AsciiValue == keyCode)
                     {
@@ -55,11 +55,11 @@ namespace Indexers_Features
 
             set
             {
-                for (var i = 0; i < keys.Count; i++)
+                for (var i = 0; i < Keys.Count; i++)
                 {
-                    if (keys[i].AsciiValue == keyCode)
+                    if (Keys[i].AsciiValue == keyCode)
                     {
-                        keys[i] = value;
+                        Keys[i] = value;
                     }
                 }
 

@@ -15,7 +15,7 @@ Key key3 = keyboard[96];
 
 keyboard[96] = new Key(96);
 
-//keyboard.keys.Add(key1);
-//keyboard.keys.Add(key3);
+keyboard.Keys.Add(key1);
+keyboard.Keys.Add(key3);
 
-Console.WriteLine($"{keyboard.keys['c']}");
+Console.WriteLine($"{keyboard['c']}");
