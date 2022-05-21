@@ -1,0 +1,94 @@
+﻿                                                      C# | Delegates
+========================================================================================================================================
+
+A delegate is an object which refers to a method or you can say it is a reference type variable that can hold a reference to the methods.
+Delegates in C# are similar to the function pointer in C/C++. It provides a way which tells which method is to be called when an event is
+triggered. 
+
+For example, if you click on a Button on a form (Windows Form application), the program would call a specific method. In simple words,
+it is a type that represents references to methods with a particular parameter list and return type and then calls the method in a 
+program for execution when it is needed.
+
+
+Important Points About Delegates: 
+--------------------------------------------------------------------------------------------------------------------------------------------
+- Provides a good way to encapsulate the methods.
+-****Delegates are the library class in System namespace.
+- These are the type-safe pointer of any method.
+- Delegates are mainly used in implementing the call-back methods and events.
+- Delegates can be chained together as two or more methods can be called on a single event.
+- It doesn’t care about the class of the object that it references.
+- Delegates can also be used in “anonymous methods” invocation.
+- Anonymous Methods(C# 2.0) and Lambda expressions(C# 3.0) are compiled to delegate types in certain contexts. Sometimes, these features together
+  are known as anonymous functions.
+
+
+Declaration of Delegates
+--------------------------------------------------------------------------------------------------------------------------------------------
+Delegate type can be declared using the delegate keyword. Once a delegate is declared, delegate instance will refer and call those methods 
+whose return type and parameter-list matches with the delegate declaration.
+
+==========
+Syntax:
+==========
+
+[modifier] delegate [return_type] [delegate_name] ([parameter_list]);
+
+
+here: 
+
+=> modifier: It is the required modifier which defines the access of delegate and it is optional to use.
+=> delegate: It is the keyword which is used to define the delegate.
+=> return_type: It is the type of value returned by the methods which the delegate will be going to call. It can be void. A method must have the same return type as the delegate.
+=> delegate_name: It is the user-defined name or identifier for the delegate.
+=> parameter_list: This contains the parameters which are required by the method when called through the delegate. 
+
+
+
+
+
+
+===========
+Example:
+===========
+---------------------------------------------------------------
+public delegate int GeeksForGeeks(int G, int F, int G);
+---------------------------------------------------------------
+
+here,
+
+// "public" is the modifier
+// "int" is return type
+// "GeeksForGeeks" is delegate name
+// "(int G, int F, int G)" are the parameters
+
+Note: A delegate will call only a method which agrees with its signature and return type. A method can be a static method associated with a class or can be an 
+instance method associated with an object, it doesn’t matter. 
+ 
+
+
+
+
+Instantiation & Invocation of Delegates
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+After declaring a delegate, a delegate object is created with the help of new keyword. Once a delegate is instantiated, a method call made to the delegate is
+pass by the delegate to that method. The parameters passed to the delegate by the caller are passed to the method, and the return value, if any, from the 
+method, is returned to the caller by the delegate. This is known as invoking the delegate. 
+
+
+=========
+Syntax:
+=========
+---------------------------------------------------------------------------------
+[delegate_name]  [instance_name] = new [delegate_name](calling_method_name);
+---------------------------------------------------------------------------------
+
+Example: 
+
+GeeksForGeeks GFG = new GeeksForGeeks (Geeks);
+
+ here,
+
+// "GeeksForGeeks" is delegate name. 
+// "GFG" is instance_name
+// "Geeks" is the calling method.
