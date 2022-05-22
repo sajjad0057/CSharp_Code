@@ -1,0 +1,7 @@
+﻿
+
+                                      Follow Above Link to Know More About Func and Action - delegates : 
+
+                                     ***  https://www.tutorialsteacher.com/csharp/csharp-func-delegate  ***
+
+                                     ** https://www.c-sharpcorner.com/UploadFile/ff0d0f/action-and-func-delegates-in-C-Sharp-net/ **
