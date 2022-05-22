@@ -1,7 +1,48 @@
 ﻿
 
                                       Follow Above Link to Know More About Func and Action - delegates : 
+                                    ======================================================================
+
+
+                           *** https://www.c-sharpcorner.com/UploadFile/ff0d0f/action-and-func-delegates-in-C-Sharp-net/ ***
 
                                      ***  https://www.tutorialsteacher.com/csharp/csharp-func-delegate  ***
 
-                                     ** https://www.c-sharpcorner.com/UploadFile/ff0d0f/action-and-func-delegates-in-C-Sharp-net/ **
+                                     
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+If we want to use delegates in our examples or applications, typically we use the following procedure:
+
+- Define a custom delegate that matches the format of the method.
+- Create an instance of a delegate and point it to a method.
+- Invoke the method.
+
+
+**************************************************************************************
+But, using these 2 Generics delegates we can simply eliminate the above procedure.
+**************************************************************************************
+
+
+Since both the delegates are generic, you will need to specify the underlying types of each parameter as well while pointing it to a function.
+
+For for example
+
+1. Func< int, int, string>
+2. Action<type,type,type……>
+
+-------------
+Func<>
+-------------
+
+- The generic Func<> delegate is used when we want to point to a method that returns a value.
+- This delegate can point to a method that takes up to 16 Parameters and returns a value.
+- Always remember that the final parameter of Func<> is always the return value of the method. 
+  (For example, Func< int, int, string>, this version of the Func<> delegate will take 2 int parameters and returns a string value.)
+
+---------
+Action<>
+---------
+- The Generic Action<> delegate is defined in the System namespace of microlib.dll
+- This Action<> generic delegate; points to a method that takes up to 16 Parameters and returns void.

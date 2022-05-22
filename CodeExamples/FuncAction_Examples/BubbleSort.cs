@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Delegate_Examples
+namespace FuncAction_Examples
 {
     public class BubbleSort<T>
     {
-        public delegate int Compare(T x, T y);
-        public static void Sort(T[] items, Compare compare)
+        
+        public static void Sort(T[] items, Func<T , T, int> compare)
         {
             for (int i = 0; i <= items.Length-2; i++)
             {
