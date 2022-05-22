@@ -2,9 +2,6 @@
 
 int[] arr = new int[] { 1, 3, 2, 8, 9, 7, 10, 6, 5 };
 
-BubbleSort<int>.Sort(arr, CompareValue);
-
-
 int CompareValue(int a, int b)
 {
     if (a > b)
@@ -15,14 +12,22 @@ int CompareValue(int a, int b)
 }
 
 
+//// BubbleSort<int>.Sort(arr, CompareValue);
+
+
+
+
+
+//// Also we can write :
+///
+Func<int, int, int> y = CompareValue;
+
+BubbleSort<int>.Sort(arr, y);
+
+
 Console.WriteLine("Sorting Result : ");
 
 foreach (int a in arr)
 {
     Console.Write($"{a} , ");
 }
-
-
-//// Also we can write :
-///
-Func<int, int, int> y = CompareValue;
