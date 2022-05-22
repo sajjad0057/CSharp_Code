@@ -27,7 +27,14 @@ BubbleSort<int>.Sort(arr, y);
 
 Console.WriteLine("Sorting Result : ");
 
-foreach (int a in arr)
+void Print(int[] array)
 {
-    Console.Write($"{a} , ");
+    foreach (int a in array)
+    {
+        Console.Write($"{a} , ");
+    }
 }
+
+Action<int[]> z = Print;
+
+z(arr);
