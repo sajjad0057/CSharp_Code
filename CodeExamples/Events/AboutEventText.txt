@@ -1,0 +1,56 @@
+﻿                                          Know More About Event Follow given Link :
+                                      -------------------------------------------------
+
+                                ***  https://www.tutorialsteacher.com/csharp/csharp-event  ***
+
+                           ***  https://www.c-sharpcorner.com/UploadFile/1c8574/events-in-C-Sharp/ ***
+
+
+
+
+=====================================================================================================================================================================
+
+C# and .NET supports event driven programming via delegates. Delegates and events provide notifications to client applications when some
+state changes of an object. It is an encapsulation of idea that "Something happened". Events and Delegates are tightly coupled concept 
+because event handling requires delegate implementation to dispatch events.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+The class that sends or raises an event is called a "Publisher" and class that receives or handle the event is called "Subscriber"
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+******************************************************************************************************************************************
+---------------------
+Points to Remember :
+---------------------
+1. An event is a wrapper around a delegate. It depends on the delegate.
+2. Use "event" keyword with delegate type variable to declare an event.
+3. Use built-in delegate EventHandler or EventHandler<TEventArgs> for common events.
+4. The publisher class raises an event, and the subscriber class registers for an event and provides the event-handler method.
+5. Name the method which raises an event prefixed with "On" with the event name.
+6. The signature of the handler method must match the delegate signature.
+****************
+7. Register with an event using the += operator. Unsubscribe it using the -= operator. Cannot use the = operator.
+****************
+8. Pass event data using EventHandler<TEventArgs>.
+9. Derive EventArgs base class to create custom event data class.
+10. Events can be declared static, virtual, sealed, and abstract.
+11. An Interface can include the event as a member.
+12. Event handlers are invoked synchronously if there are multiple subscribers.
+
+
+******************************************************************************************************************************************
+
+
+
+Following are the key points about Event :
+ 
+=> Event Handlers in C# return void and take two parameters.
+=> The First parameter of Event - Source of Event means publishing object.
+=> The Second parameter of Event - Object derived from EventArgs.
+=> The publishers determines when an event is raised and the subscriber determines what action is taken in response.
+=> An Event can have so many subscribers.
+=> Events are basically used for the single user action like button click.
+=> If an Event has multiple subscribers then event handlers are invoked synchronously.
