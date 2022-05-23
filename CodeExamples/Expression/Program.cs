@@ -15,3 +15,6 @@ Func<int,int,int> a = sum.Compile();
 
 int r = a(1, 3);
 Console.WriteLine(r);
+
+
+List<int> l = new List<int> { 1, 3 };
