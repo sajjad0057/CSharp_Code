@@ -8,24 +8,24 @@ namespace Task3
 {
     public class Query
     {
-        public List<Course> GetCategory() => Category.CourseList;
-        public List<Category> GetCategories() => Course.categoryList;
+        public List<Category> GetCategory() => Categories.CategoryList;
+        public List<Course> GetCourse() => Courses.CourseList;
 
         public Query()
         {
-            List<Course> Courselist = GetCategory();
-            List<Category> categories = GetCategories();
+            List<Course> Courselist = GetCourse();
+            List<Category> CategoryList = GetCategory();
 
             var course = (from c in Courselist
                           where c.Fees > 10000
-                          join cat in categories on c.CategoryId equals cat.Id                             
-                          select (c,cate:cat.Name));
+                          join cat in CategoryList on c.CategoryId equals cat.Id                             
+                          select (c,category:cat.Name));
 
            
 
             foreach(var cos in course)
             {
-                Console.WriteLine($"Course Name : {cos.c.Title} ; Course Fees : {cos.c.Fees} ; Category Name : {cos.cate}");
+                Console.WriteLine($"Course Name : {cos.c.Title} ; Course Fees : {cos.c.Fees} ; Category Name : {cos.category}");
             }
                              
 
