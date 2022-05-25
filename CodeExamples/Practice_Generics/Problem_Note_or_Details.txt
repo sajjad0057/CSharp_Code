@@ -1,0 +1,21 @@
+﻿                                                          
+                                                        - Problem -
+                                   --------------------------------------------------------
+
+-------
+Task :
+-------
+
+1. Create a generic interface (INode), a generic abstract class (NodeBase) and a generic
+class (Node). Each of them will take 2 generic parameters. First parameter must be a
+class and the 2nd parameter must be an INode (use generic parameter constraints to
+enforce it).
+
+
+2. Implement the above interface (INode) in the abstract class (NodeBase) and inherit the
+Node class from NodeBase.
+
+
+3. Interface INode should have two methods Add and Remove, that takes the first Generic
+parameter as datatype of the only parameter “item” in the methods. Body of the method
+is not needed.

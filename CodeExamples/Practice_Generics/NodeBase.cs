@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Practice_Generics
 {
-    public abstract class NodeBase<T, Q> where T : class where Q : INode<T,Q>, new()
+    public abstract class NodeBase<T, Q> 
+        where T : class 
+        where Q : INode<T,Q>
     {
         
         public void Add(T item)

@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Practice_Generics
 {
-    internal interface INode<item,iNode> where item : class where iNode : INode<item,iNode>
+    public interface INode<T,Q> 
+        where T : class 
+        where Q : INode<T,Q>
     {
-        void Add(item item);
-        void Remove(item item);
+        void Add(T item);
+        void Remove(Q item);
     }
 }
