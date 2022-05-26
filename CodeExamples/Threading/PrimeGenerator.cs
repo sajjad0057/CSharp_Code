@@ -8,19 +8,17 @@ namespace Threading
 {
     public class PrimeGenerator
     {
-        public List<int> Generate(int start , int end)
+        public void Generate(int start , int end)
         {   
-            List<int> primes = new List<int>();
 
             for(int i = start; i <= end; i++)
             {
                 if (_isPrime(i))
                 {
-                    primes.Add(i);
+                    Console.WriteLine($"{i} is a prime number ");
                 }
             }
-
-            return primes;
+            
         }
 
         
