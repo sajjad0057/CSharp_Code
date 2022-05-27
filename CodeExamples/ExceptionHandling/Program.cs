@@ -54,3 +54,26 @@ finally
     Console.WriteLine("---------------------------------------------------");
     Console.WriteLine("We Practice Exception Handling . ");
 };
+
+
+
+Console.WriteLine("===========================================================================");
+
+Temperature temperature = new Temperature(0);
+
+try
+{
+    temperature.showTemp();
+}
+catch(TempIsZeroException e)
+{
+    Console.WriteLine(e.Message);
+}
+catch (Exception e)
+{
+    Console.WriteLine(e.Message);
+}
+finally
+{
+    Console.WriteLine("Practice User define Exception Handling - ");
+}
