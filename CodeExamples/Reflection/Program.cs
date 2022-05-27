@@ -1,5 +1,5 @@
-﻿
-using Reflection;
+﻿using Reflection;
+using System.Reflection;
 
 Test1 test1 = new Test1();
 
@@ -20,6 +20,7 @@ Console.WriteLine($"test1.Name : {test1.Title}");
 
 
 //// After Using Refelction Feature here we set test2 object  Property as test1 object  Property  
+///
 
 Console.WriteLine("After Using Refelction Feature here we set test2 object Property as test1 object Property - ");
 
@@ -36,15 +37,28 @@ Product product = new Product { Title = "Mouse 1v2" , Price = 500, Description =
 
 Electronics electronics = copier.Copy<Electronics>(product);
 
-Console.WriteLine($"product.Title : {product.Title} ; product.Description : {product.Description}; product.Price : {product.Price}");
 
+void PrintObject(object obj)
+{
+    Type type = obj.GetType();
+    PropertyInfo[] properties = type.GetProperties();
+    
+    foreach (var property in properties)
+    {
+        Console.WriteLine($"{property.Name} : {property.GetValue(obj)}");
+    }
+}
+
+Console.WriteLine($"{product.GetType().Name} : ");
+PrintObject(product);
 
 
 //// After Using Refelction Feature here we set electronics object  Property as product object Property -
 
 Console.WriteLine("After Using Refelction Feature here we set electronics object Property as product object Property - ");
 
-Console.WriteLine($"electronics.Title : {electronics.Title} ; electronics.Price : {electronics.Price}");
+Console.WriteLine($"{electronics.GetType().Name} : ");
+PrintObject(electronics);
 
 
 
