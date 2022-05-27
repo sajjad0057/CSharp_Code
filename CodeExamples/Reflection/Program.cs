@@ -27,5 +27,26 @@ Console.WriteLine($"test2.Id : {test2.Id}");
 
 Console.WriteLine($"test2.Name : {test2.Name}");
 
+Console.WriteLine();
+Console.WriteLine("==========================================================================================================");
+Console.WriteLine("Another Examples : ");
+
+
+Product product = new Product { Title = "Mouse 1v2" , Price = 500, Description = "A long Description "};
+
+Electronics electronics = copier.Copy<Electronics>(product);
+
+Console.WriteLine($"product.Title : {product.Title} ; product.Description : {product.Description}; product.Price : {product.Price}");
+
+
+
+//// After Using Refelction Feature here we set electronics object  Property as product object Property -
+
+Console.WriteLine("After Using Refelction Feature here we set electronics object Property as product object Property - ");
+
+Console.WriteLine($"electronics.Title : {electronics.Title} ; electronics.Price : {electronics.Price}");
+
+
+
 
 
