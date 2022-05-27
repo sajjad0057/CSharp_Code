@@ -37,6 +37,7 @@ try
 }catch(DivideByZeroException e)
 {
     Console.WriteLine(e.Message);
+
     Console.WriteLine("Divided By Zero Does Not Possible -");
 }
 catch(InvalidInputException e)
@@ -46,5 +47,10 @@ catch(InvalidInputException e)
 }
 catch(Exception e)
 {
-    Console.WriteLine($"An Exception Occur : {e.Message} ");
+    Console.WriteLine($"An Exception Occur : Something is wrong");
+}
+finally
+{
+    Console.WriteLine("---------------------------------------------------");
+    Console.WriteLine("We Practice Exception Handling . ");
 };
