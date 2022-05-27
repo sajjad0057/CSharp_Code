@@ -36,7 +36,7 @@ namespace Reflection
             {
                 foreach (PropertyInfo t2Property in t2properties)
                 {
-                    if(t1Property.Name == t2Property.Name)
+                    if(t1Property.Name == t2Property.Name)   //// here , Name property return the Property Name
                     {
                         t1Property.SetValue(result, t2Property.GetValue(item));
                     }

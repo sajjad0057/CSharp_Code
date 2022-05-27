@@ -4,7 +4,7 @@ using Reflection;
 Test1 test1 = new Test1();
 
 test1.Id = 5;
-test1.Name = "Something";
+test1.Title = "Something";
 test1.Address = "Dhaka";
 
 
@@ -15,7 +15,7 @@ Test2 test2 = copier.Copy<Test2>(test1);
 
 Console.WriteLine($"test1.Id : {test1.Id}");
 
-Console.WriteLine($"test1.Name : {test1.Name}");
+Console.WriteLine($"test1.Name : {test1.Title}");
 
 
 
@@ -25,7 +25,7 @@ Console.WriteLine("After Using Refelction Feature here we set test2 object Prope
 
 Console.WriteLine($"test2.Id : {test2.Id}");
 
-Console.WriteLine($"test2.Name : {test2.Name}");
+Console.WriteLine($"test2.Name : {test2.Title}");
 
 Console.WriteLine();
 Console.WriteLine("==========================================================================================================");
