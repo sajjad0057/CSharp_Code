@@ -1,4 +1,9 @@
-﻿
+﻿using ExceptionHandling;
+
+
+
+
+
 Console.WriteLine("Practice Exception Handling : ");
 Console.WriteLine("---------------------------------------------------------------------");
 
@@ -25,7 +30,7 @@ int y = 0;
 
 try
 {
-    var z =  x / y ;
+    var z = new Divide().Calculate(x, y);
 
     Console.WriteLine($"{x} / {y} = {z} ");
 
@@ -33,6 +38,11 @@ try
 {
     Console.WriteLine(e.Message);
     Console.WriteLine("Divided By Zero Does Not Possible -");
+}
+catch(InvalidInputException e)
+{
+    Console.WriteLine(e.Message);
+    
 }
 catch(Exception e)
 {
