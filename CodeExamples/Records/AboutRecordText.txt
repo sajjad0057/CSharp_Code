@@ -1,0 +1,9 @@
+﻿                                       <=====================================================================================>            
+                                                     For Know More About record in c# Follow Given Links : 
+                                       <=====================================================================================>
+
+                                       ***** https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/records *****
+
+                                            **** https://www.c-sharpcorner.com/article/record-types-in-c-sharp-103/ ****
+
+                                            *** https://medium.com/general-thoughts/c-10-record-structs-bf73353ed7bc ***
