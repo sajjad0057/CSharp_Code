@@ -7,8 +7,8 @@ public class Program
     {
         AsyncTest asyncTest = new AsyncTest();
 
-        asyncTest.Method1Async();
-        asyncTest.Method2();
+        asyncTest.PrintEvenAsync();
+        asyncTest.PrintOddAsync();
 
         Console.ReadKey();
 

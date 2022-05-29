@@ -12,18 +12,26 @@ namespace Async_Examples
         /// Examples of Asynchronous code , Asynchronous code are executed parallely and next code will not waiting untill finishing previous code executions .
         /// All codes executions are doing parallely , 
         /// </summary>
-        public async Task Method1Async()
+        public async Task PrintEvenAsync()
         {
             await Task.Run(() =>
             {
-                Thread.Sleep(7000);
-                Console.WriteLine("This method has taken 7 sec already !");
+                for (int i = 0; i <= 200; i += 2)
+                {
+                    Console.WriteLine(i);                   
+                }
             });
         }
 
-        public void  Method2()
+        public async Task PrintOddAsync()
         {
-            Console.WriteLine("Method 2 executed ! ");
+            await Task.Run(() =>
+            {
+                for (int i = 1; i <= 200; i += 2)
+                {
+                    Console.WriteLine(i);
+                }
+            });
         }
 
     }
