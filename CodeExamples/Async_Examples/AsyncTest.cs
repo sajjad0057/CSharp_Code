@@ -9,20 +9,30 @@ namespace Async_Examples
     public class AsyncTest
     {
 
-        public void PrintEven()
+        public async Task PrintEven()
         {
-            for (int i = 0; i <= 200; i+=2)
+            //// using async keyword, declare a method as asynchronous and in this method accept a logic under Task.Run()  method .
+            
+            Task.Run(() =>
             {
-                Console.WriteLine(i);
-            }
+                for (int i = 0; i <= 200; i += 2)
+                {
+                    Console.WriteLine(i);
+                }
+
+            });
+
         }
 
-        public void PrintOdd()
+        public async Task PrintOdd()
         {
-            for (int i = 1; i <= 200; i+=2)
+            Task.Run(() =>
             {
-                Console.WriteLine(i);
-            }
+                for (int i = 1; i <= 200; i += 2)
+                {
+                    Console.WriteLine(i);
+                }
+            });
         }
 
     }

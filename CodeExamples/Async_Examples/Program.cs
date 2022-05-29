@@ -11,6 +11,8 @@ public class Program
         asyncTest.PrintEven();
         asyncTest.PrintOdd();
 
+        Console.ReadKey();
+
     }
 }
 
