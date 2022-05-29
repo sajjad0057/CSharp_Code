@@ -13,25 +13,24 @@ namespace Async_Examples
         /// All codes executions are doing parallely , 
         /// </summary>
         public async Task PrintEvenAsync()
-        {
-            await Task.Run(() =>
-            {
-                for (int i = 0; i <= 200; i += 2)
-                {
-                    Console.WriteLine(i);                   
-                }
-            });
-        }
+        {   
+            int res = 0;
 
+            await Task.Run(() =>
+            { 
+                    Thread.Sleep(5000);
+            });
+
+            Console.WriteLine("PrintEvenAsync executed ! , here Thread Sleep 5 sec");
+        }
         public async Task PrintOddAsync()
         {
             await Task.Run(() =>
             {
-                for (int i = 1; i <= 200; i += 2)
-                {
-                    Console.WriteLine(i);
-                }
+                Thread.Sleep(3000);
             });
+
+            Console.WriteLine("PrintEvenAsync executed ! , here Thread Sleep 3 sec");
         }
 
     }
