@@ -14,8 +14,6 @@ namespace Async_Examples
         /// </summary>
         public async Task PrintEvenAsync()
         {   
-            int res = 0;
-
             await Task.Run(() =>
             { 
                     Thread.Sleep(5000);
