@@ -23,7 +23,7 @@ Console.WriteLine("-------------------------------------------------------------
 
 Console.WriteLine("In The Case of Record - ");
 
-Console.WriteLine("-----------------------------------------------------------------");
+Console.WriteLine("-----------------------------------------------------------------"); 
 
 Product1 product1 = new Product1("camera", 2000);
 Product1 product11 = new Product1("camera", 2000);
