@@ -5,15 +5,17 @@ public class Program
 {
     public static void Main(string[] args)
     {
-
         AsyncTest asyncTest = new AsyncTest();
 
-        asyncTest.PrintEven();
-        asyncTest.PrintOdd();
-
-        Console.ReadKey();
+        asyncTest.PrintEvenAsync();
+        asyncTest.PrintOddAsync();
 
     }
 }
+
+
+
+
+
 
 
