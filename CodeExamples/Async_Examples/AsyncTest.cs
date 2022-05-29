@@ -9,17 +9,21 @@ namespace Async_Examples
     public class AsyncTest
     {
         /// <summary>
-        /// Examples of Synchronous code , Synchronous code are executed sequentially and next code will waiting untill finishing previous code executions .
+        /// Examples of Asynchronous code , Asynchronous code are executed parallely and next code will not waiting untill finishing previous code executions .
+        /// All codes executions are doing parallely , 
         /// </summary>
-        public void PrintEvenAsync()
+        public async Task Method1Async()
         {
-            Thread.Sleep(7000);
-            Console.WriteLine("This method has taken 7 sec already !");
+            await Task.Run(() =>
+            {
+                Thread.Sleep(7000);
+                Console.WriteLine("This method has taken 7 sec already !");
+            });
         }
 
-        public void  PrintOddAsync()
+        public void  Method2()
         {
-            Console.WriteLine("After 7+ sec method 2 has executed ! ");
+            Console.WriteLine("Method 2 executed ! ");
         }
 
     }
