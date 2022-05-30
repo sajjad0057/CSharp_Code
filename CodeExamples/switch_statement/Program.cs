@@ -29,9 +29,8 @@ static bool CheckIfCanWalkIntoBankSwitch(Bank bank, bool isVip)
 /// </summary>
 /// 
 
-static bool CheckIfCanWalkIntoBank(Bank bank,bool isVip) 
-{
-    return bank.Status switch
+static bool CheckIfCanWalkIntoBank(Bank bank,bool isVip) =>
+    bank.Status switch
     {
         BankBranchStatus.Open => true,
         BankBranchStatus.Closed => false,
@@ -39,5 +38,3 @@ static bool CheckIfCanWalkIntoBank(Bank bank,bool isVip)
         _ => false,
 
     };
-
-}
