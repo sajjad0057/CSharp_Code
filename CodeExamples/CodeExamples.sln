@@ -104,7 +104,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "new_using_keyword", "new_us
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Records", "Records\Records.csproj", "{54D40C7E-6347-4B8C-9BCA-2F124A75DCA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async_Examples", "Async_Examples\Async_Examples.csproj", "{0BB240E2-A104-4306-ABDA-13E82F754CB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Async_Examples", "Async_Examples\Async_Examples.csproj", "{0BB240E2-A104-4306-ABDA-13E82F754CB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "switch_statement", "switch_statement\switch_statement.csproj", "{BCCB3459-3693-422F-8FDF-FDFCCDEF5F42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -308,6 +310,10 @@ Global
 		{0BB240E2-A104-4306-ABDA-13E82F754CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BB240E2-A104-4306-ABDA-13E82F754CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BB240E2-A104-4306-ABDA-13E82F754CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCCB3459-3693-422F-8FDF-FDFCCDEF5F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCCB3459-3693-422F-8FDF-FDFCCDEF5F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCCB3459-3693-422F-8FDF-FDFCCDEF5F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCCB3459-3693-422F-8FDF-FDFCCDEF5F42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
