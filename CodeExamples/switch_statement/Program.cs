@@ -38,3 +38,20 @@ static bool CheckIfCanWalkIntoBank(Bank bank,bool isVip) =>
         _ => false,
 
     };
+
+
+/// <summary>
+/// Example of Case Guards in switch expression
+/// </summary>
+
+static bool CheckIfCanWalkIntoBank4(Bank bank, bool isVip)
+{
+    return bank.Status switch
+    {
+        BankBranchStatus.Open => true,
+        BankBranchStatus.Closed => false,
+        BankBranchStatus.VIPCustomersOnly when isVip => true,   // check some new condition or case using when keyword ,
+        BankBranchStatus.VIPCustomersOnly when !isVip => false,
+        _ => false
+    };
+}
