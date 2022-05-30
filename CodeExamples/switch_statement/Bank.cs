@@ -9,6 +9,7 @@ namespace switch_statement
 
     public class Bank
     {
+        public string Name { get; set; }
         public BankBranchStatus Status { get; set; }
 
     }
@@ -21,3 +22,4 @@ namespace switch_statement
     }
 
 }
+

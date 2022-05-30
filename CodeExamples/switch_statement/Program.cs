@@ -25,7 +25,7 @@ static bool CheckIfCanWalkIntoBankSwitch(Bank bank, bool isVip)
 
 
 /// <summary>
-/// Example of New switch statement : 
+/// Example of New switch statement And It's Feature : 
 /// </summary>
 /// 
 
@@ -71,5 +71,25 @@ static bool CheckIfCanWalkIntoBank5(Bank bank, bool isVip)
         (BankBranchStatus.VIPCustomersOnly, true) => true,
         (BankBranchStatus.VIPCustomersOnly, false) => false,
         (_, _) => false
+    };
+}
+
+
+
+/// <summary>
+/// Example of Using, Object and Check value One Or Value in switch statement / expression 
+/// </summary>
+
+
+
+
+static bool CheckIfCanWalkIntoBank6(Bank bank, bool isVip)
+{
+    return bank switch
+    {
+        { Status: BankBranchStatus.Open, Name: _ } => true,        // here _ indicate default value .
+        { Status: BankBranchStatus.Closed, Name : "something"} => false, 
+        { Status: BankBranchStatus.VIPCustomersOnly , Name: "ABC" } => isVip,    
+        { Status: _ } => false
     };
 }
