@@ -55,7 +55,8 @@ class IndexerCreation
     // Indexer declaration
     // public - access modifier
     // string - the return type of the Indexer
-      // this - is the keyword having a parameters list
+    // this - is the keyword having a parameters list
+
     public string this[int index]
     {
  
@@ -92,11 +93,13 @@ class main {
          
         // creating an object of parent class which
         // acts as primary address for using Indexer
+
         IndexerCreation ic = new IndexerCreation();
  
         // Inserting values in ic[]
         // Here we are using the object
         // of class as an array
+
         ic[0] = "C";
         ic[1] = "CPP";
         ic[2] = "CSHARP";

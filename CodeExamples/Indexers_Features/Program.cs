@@ -3,19 +3,15 @@ using Indexers_Features;
 
 Keyboard keyboard = new Keyboard();
 
-//keyboard.keys[0] = new Key();
+keyboard.Keys.Add(new Key('A'));
+keyboard.Keys.Add(new Key('B'));
+keyboard.Keys.Add(new Key('C'));
+keyboard.Keys.Add(new Key('D'));
+keyboard.Keys.Add(new Key('E'));
 
-//Key key = keyboard.keys[0];
+keyboard.Keys.Add(new Key(96));
 
-Key key1 = keyboard['c'];
 
-keyboard['c'] = new Key('c');
-
-Key key3 = keyboard[96];
-
-keyboard[96] = new Key(96);
-
-keyboard.Keys.Add(key1);
-keyboard.Keys.Add(key3);
-
-Console.WriteLine($"{keyboard['c']}");
+Console.WriteLine($"{keyboard['C'].KeyCharacter}");
+Console.WriteLine($"{keyboard['E'].KeyCharacter}");
+Console.WriteLine($"{keyboard[96].AsciiValue}");
