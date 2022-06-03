@@ -3,11 +3,13 @@ using System.IO;
 
 
 Console.WriteLine("Welcome to perform basic file Operations : ");
+Console.WriteLine("Add Or Search Your Word -  ");
 Console.WriteLine("-------------------------------------------------------------------------------------");
 
 string currentDirectoy = Directory.GetCurrentDirectory();
 
 DirectoryInfo directoryInfo = new DirectoryInfo(currentDirectoy);  // creating directoryInfo object here
+
 
 
 /// <summary>
@@ -17,35 +19,109 @@ DirectoryInfo directoryInfo = new DirectoryInfo(currentDirectoy);  // creating d
 
 string path = directoryInfo.Parent.Parent.Parent.ToString();
 
-Console.WriteLine("Enter file name with .extension must : ");
+////Console.WriteLine($"{path}; type : {path.GetType()}");
 
-string fileName = Console.ReadLine();
+////Console.WriteLine(SearchWord("sajjad"));
 
-Console.WriteLine($"{path}; type : {path.GetType()}");
+////Console.WriteLine(FileExistsOrNot());
 
-Console.WriteLine("Enter Text note to Add this text file : ");
+Console.WriteLine("Press 1 for Add Word -  ");
+Console.WriteLine("Press 2 for Search Word - ");
+Console.WriteLine("Press Any Key For Exit - ");
+string command = Console.ReadLine().Trim();
+Console.WriteLine("-----------------------------------------------------");
 
-string textNote = Console.ReadLine();
-
-
-void AppendTextNoteToFile(string textnote)
+if (command == "1")
 {
-    using StreamWriter writer = File.AppendText($"{path}\\{fileName}");
-    writer.WriteLine(textnote + " ");
-    Console.WriteLine("Text Added Succesfully ! ");
+    Console.Write("Enter a Word : ");
+    string textNote = Console.ReadLine().Trim();
+    Console.WriteLine("-----------------------------------------------------");
+
+    if (SearchWord(textNote))
+    {
+        Console.WriteLine("This Word Is Already Exists in file !");
+    }
+    else
+    {
+        if (!FileExistsOrNot())
+        {
+            using StreamWriter writer = File.CreateText($"{path}\\data.str");
+            writer.WriteLine(textNote);
+            Console.WriteLine("File Created and Add Your Word Successfully ! ");
+
+        }
+        else if (FileExistsOrNot())
+        {
+            using StreamWriter writer = File.AppendText($"{path}\\data.str");
+            writer.WriteLine(textNote);
+            Console.WriteLine("Your Word added Successfully ! ");
+        }
+        else
+        {
+            Console.WriteLine("Something Wrong ! Check Please ! ");
+        }
+    }
+
+}
+else if (command == "2")
+{
+    Console.Write("Enter a Word : ");
+    string textNote = Console.ReadLine().Trim();
+    Console.WriteLine("-----------------------------------------------------");
+    if (SearchWord(textNote))
+    {
+        Console.WriteLine("This Word is Exists in this File !");
+    }
+    else
+    {
+        Console.WriteLine("This Word does not Exists in this File !");
+    }
 }
 
-if (!File.Exists($"{path}\\{fileName}"))
-{
-    File.Create($"{path}\\{fileName}");
-    Console.WriteLine("File Added Sucessfully , Please Again Add Text : ");
 
-}
-else if (File.Exists($"{path}\\data.str"))
+
+
+
+
+
+bool SearchWord(string word)
 {
-    AppendTextNoteToFile(textNote);
+    if (FileExistsOrNot())
+    {
+        using (StreamReader reader = new StreamReader($"{path}\\data.str"))
+        {
+            string line = null;
+            bool found = false;
+            while ((line = reader.ReadLine()) != null)
+            {
+                string[] words = line.Split();
+                foreach (string w in words)
+                {
+                    //Console.WriteLine(w);
+                    if (w == word)
+                    {
+                        found = true;
+                        break;
+                    }
+                }
+            }
+            return found;
+        }
+
+    }
+    else
+    {
+        return false;
+    }
 }
-else
+
+
+
+bool FileExistsOrNot()
 {
-    Console.WriteLine("Something Wrong ! Check Please ! ");
+    return File.Exists($"{path}\\data.str");
 }
+
+
+
+
