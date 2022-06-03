@@ -114,10 +114,13 @@ string currentDirectoy = Directory.GetCurrentDirectory();
 
 DirectoryInfo directoryInfo = new DirectoryInfo(currentDirectoy);  // creating directoryInfo object here
 
-/*
-here every Parent are return Onetimes Up directory or path 
-*/
- 
+/// <summary>
+/// Here , directoryInfo object return Full routh of this project directory that contains net[version_no] folder .
+/// here every Parent are return Onetimes Up directory or path 
+/// </summary>
+
+
+
 FileInfo[] files = directoryInfo.Parent.Parent.Parent.GetFiles();  // here return all files path/directories in FileInfo[] array that are exists in this directory . 
 
 foreach (FileInfo file in files)

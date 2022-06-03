@@ -22,7 +22,7 @@ This static class is equipped with various types of (static) methods to create, 
 delete, or check the existence of a file
 ----------------------------------------------------------------------------------------------------------------------------------
 
-Note: FileIno, DirectoryInfo and DriveInfo classes have instance methods. File, Directory, Path classes have static methods.
+Note: FileInfo, DirectoryInfo and DriveInfo classes have instance methods. File, Directory, Path classes have static methods.
  
 The following table describes some commonly used classes in the System.IO namespace.
  
