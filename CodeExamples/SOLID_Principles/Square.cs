@@ -9,7 +9,7 @@ namespace SOLID_Principles
     public class Square : IShape
     {
         public double Width { get; set; }
-        public virtual double CalculateArea()
+        public  double CalculateArea()
         {
             return Width * Width;
         }
