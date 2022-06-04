@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace SOLID_Principles
 {
-    public class Rectangle : IShape
+    public class Rectangle : Square
     {
-        public double Width { get; set; } 
         public double Height { get; set; }
-        public double CalculateArea()
+        public override double CalculateArea()
         {
             return Width * Height;
         }
