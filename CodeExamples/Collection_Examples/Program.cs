@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.ObjectModel;
 
 Console.WriteLine("Example of List : ");
 
@@ -180,3 +181,10 @@ foreach (var v in counts2)
 {
     Console.WriteLine(v);
 }
+
+
+
+IReadOnlyCollection<int> ints2 = new ReadOnlyCollection<int>(new List<int>{1,2,3,4,5});
+
+
+Console.WriteLine($"Examples of IReadOnlyCollection , Count : {ints2.Count()} ");
