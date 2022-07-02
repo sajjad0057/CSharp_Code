@@ -75,6 +75,10 @@ due.Add("arif", 45);
 
 Console.WriteLine($"value of sajjad keys : {due["sajjad"]}");
 
+//// We can also using index to accessing dictionary : -
+///
+Console.WriteLine($"accessing dictionary with index : {due.ElementAt(2).Key} : {due.ElementAt(2).Value}");
+
 foreach (var key in due.Keys)
 {
     if (due[key] < 50)
@@ -82,6 +86,9 @@ foreach (var key in due.Keys)
         due.Remove(key);
     }
 }
+
+
+
 
 
 foreach (var key in due.Keys)
