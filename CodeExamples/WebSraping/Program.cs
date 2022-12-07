@@ -10,7 +10,7 @@ HtmlDocument document = web.Load("https://www.dse.com.bd/latest_share_price_scro
 
 //var nodes = document.DocumentNode.SelectNodes("//tr/td").Select(x => x.InnerText).ToArray();
 
-var tables = document.DocumentNode.SelectNodes("//table//tr");
+var tables = document.DocumentNode.SelectNodes("//div[@class='table-responsive inner-scroll']//table//tr");
 
 foreach (var node in tables)
 {
@@ -18,18 +18,7 @@ foreach (var node in tables)
     if (node.SelectSingleNode($"td[{2}]") != null)
     {
         var id = node.SelectSingleNode($"td[{2}]").InnerText;
-
         Console.WriteLine(id.Trim());
-
-    }
-
-    if (node.SelectSingleNode($"td[{3}]") != null)
-    {
-        var id = node.SelectSingleNode($"td[{3}]").InnerText;
-        if (id.Length <= 10)
-        {
-            Console.WriteLine(id.Trim());
-        }
     }
 }
 
