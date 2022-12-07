@@ -36,38 +36,3 @@ foreach (var node in tables)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//var tables = document.DocumentNode.SelectSingleNode("//table");
-
-//foreach (var node in tables.SelectNodes("//tr"))
-//{
-//    string tradingCode = ParsedValues(node, 2);
-//    string latestPrice = ParsedValues(node, 3);
-//    if (latestPrice.Length >= 1 && latestPrice.Length <= 8)
-//    {
-//        Console.WriteLine(tradingCode);
-//    }
-//}
-
-
-//string ParsedValues(HtmlNode node, int index)
-//{
-//    var id = node.SelectSingleNode($"td[{index}]") ==
-//        null ? "" : node.SelectSingleNode($"td[{index}]").InnerText;
-//    return Regex.Replace(id, @"\s", "");
-//}
-
-
-
