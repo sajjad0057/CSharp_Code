@@ -114,7 +114,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_FileOperations", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLID_Principles", "SOLID_Principles\SOLID_Principles.csproj", "{CD14924E-6A6B-4318-90DC-256B68F2F667}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_OpenClosePrinciples", "Practice_OpenClosePrinciples\Practice_OpenClosePrinciples.csproj", "{D9A5F685-2959-429D-BCF3-99E67A787072}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_OpenClosePrinciples", "Practice_OpenClosePrinciples\Practice_OpenClosePrinciples.csproj", "{D9A5F685-2959-429D-BCF3-99E67A787072}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSraping", "WebSraping\WebSraping.csproj", "{877017B1-25C9-4752-A869-470670E30086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -338,6 +340,10 @@ Global
 		{D9A5F685-2959-429D-BCF3-99E67A787072}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9A5F685-2959-429D-BCF3-99E67A787072}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A5F685-2959-429D-BCF3-99E67A787072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877017B1-25C9-4752-A869-470670E30086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877017B1-25C9-4752-A869-470670E30086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877017B1-25C9-4752-A869-470670E30086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{877017B1-25C9-4752-A869-470670E30086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
