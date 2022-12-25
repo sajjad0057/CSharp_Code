@@ -118,7 +118,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_OpenClosePrinciple
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebSraping", "WebSraping\WebSraping.csproj", "{877017B1-25C9-4752-A869-470670E30086}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnAndYield", "ReturnAndYield\ReturnAndYield.csproj", "{4DAC49D0-FA51-4840-AC1B-EAF72BFC3F19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReturnAndYield", "ReturnAndYield\ReturnAndYield.csproj", "{4DAC49D0-FA51-4840-AC1B-EAF72BFC3F19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertBase64StringToImage", "ConvertBase64StringToImage\ConvertBase64StringToImage.csproj", "{76A0FEE8-0500-4D00-80D2-307CC3E24678}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -350,6 +352,10 @@ Global
 		{4DAC49D0-FA51-4840-AC1B-EAF72BFC3F19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DAC49D0-FA51-4840-AC1B-EAF72BFC3F19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DAC49D0-FA51-4840-AC1B-EAF72BFC3F19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A0FEE8-0500-4D00-80D2-307CC3E24678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A0FEE8-0500-4D00-80D2-307CC3E24678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A0FEE8-0500-4D00-80D2-307CC3E24678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A0FEE8-0500-4D00-80D2-307CC3E24678}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
