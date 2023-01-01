@@ -30,12 +30,11 @@ ITire tier = carFactory.CreateTier();
 
 #region BuilderPattern
 
-EidCardBuilder cardBuilder = new EidCardBuilder();
-
-cardBuilder.AddMessage("Hello , Happy Eid Day !");
-cardBuilder.AddColor("Red");
-cardBuilder.AddDesign("Modern");
-cardBuilder.AddReceiverName("sajjad hossain");
+EidCardBuilder cardBuilder = new EidCardBuilder()
+    .AddMessage("Hello , Happy Eid Day !")
+    .AddColor("Red")
+    .AddDesign("Modern")
+    .AddReceiverName("sajjad hossain");
 
 EidCard card = cardBuilder.Build();
 

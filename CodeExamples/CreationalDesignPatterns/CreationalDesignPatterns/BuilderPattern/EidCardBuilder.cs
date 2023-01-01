@@ -18,24 +18,28 @@ namespace CreationalDesignPatterns.CreationalDesignPatterns.BuilderPattern
             _eidCard = new EidCard();
         }
 
-        public void AddReceiverName(string receiverName)
+        public EidCardBuilder AddReceiverName(string receiverName)
         {
             _eidCard.ReceiverName = receiverName;
+            return this;
         }
 
-        public void AddMessage(string message)
+        public EidCardBuilder AddMessage(string message)
         {
             _eidCard.Message = message;
+            return this;
         }
 
-        public void AddColor(string color)
+        public EidCardBuilder AddColor(string color)
         {
             _eidCard.Color = color;
+            return this;
         }
 
-        public void AddDesign(string design)
+        public EidCardBuilder AddDesign(string design)
         {
             _eidCard.DesignName = design;
+            return this;
         }
 
 
