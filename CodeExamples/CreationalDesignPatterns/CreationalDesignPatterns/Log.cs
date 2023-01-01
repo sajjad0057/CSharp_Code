@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CreationalDesignPatterns.CreationalDesignPatterns
 {
     /// <summary>
-    /// Example for Singleton design pattern 
+    /// Example for Singleton design pattern
     /// </summary>
     public class Log
     {
@@ -18,9 +18,12 @@ namespace CreationalDesignPatterns.CreationalDesignPatterns
 
         public static Log GetLogger()
         {
-            if(_log == null)
+            lock ("lock")
             {
-                _log = new Log();
+                if (_log == null)
+                {
+                    _log = new Log();
+                }
             }
 
             return _log;
