@@ -124,7 +124,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertBase64StringToImage"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreationalDesignPatterns", "CreationalDesignPatterns\CreationalDesignPatterns.csproj", "{1CB6666B-A1E0-4C0E-9738-81CAA0C4AABE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageKeyCountString", "ManageKeyCountString\ManageKeyCountString.csproj", "{B955B962-7F8A-4251-955C-3CA5506A9C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManageKeyCountString", "ManageKeyCountString\ManageKeyCountString.csproj", "{B955B962-7F8A-4251-955C-3CA5506A9C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloudApperInterviewExamples", "CloudApperInterviewExamples\CloudApperInterviewExamples.csproj", "{CDA92959-7048-4E9A-8B19-C1DFB3EB1C90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -368,6 +370,10 @@ Global
 		{B955B962-7F8A-4251-955C-3CA5506A9C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B955B962-7F8A-4251-955C-3CA5506A9C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B955B962-7F8A-4251-955C-3CA5506A9C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA92959-7048-4E9A-8B19-C1DFB3EB1C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA92959-7048-4E9A-8B19-C1DFB3EB1C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA92959-7048-4E9A-8B19-C1DFB3EB1C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA92959-7048-4E9A-8B19-C1DFB3EB1C90}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
