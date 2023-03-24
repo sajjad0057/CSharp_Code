@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "two-sum", "two-sum\two-sum.csproj", "{F5FA4CB0-1373-4834-83CE-675E0C8F90ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "two-sum", "two-sum\two-sum.csproj", "{F5FA4CB0-1373-4834-83CE-675E0C8F90ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "add-two-numbers", "add-two-numbers\add-two-numbers.csproj", "{144D00C1-BF44-4CE7-9708-01B4822D7137}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "palindrome-number", "palindrome-number\palindrome-number.csproj", "{D15686E6-F971-4EE5-91C0-468567314425}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F5FA4CB0-1373-4834-83CE-675E0C8F90ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5FA4CB0-1373-4834-83CE-675E0C8F90ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5FA4CB0-1373-4834-83CE-675E0C8F90ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{144D00C1-BF44-4CE7-9708-01B4822D7137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{144D00C1-BF44-4CE7-9708-01B4822D7137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{144D00C1-BF44-4CE7-9708-01B4822D7137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{144D00C1-BF44-4CE7-9708-01B4822D7137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D15686E6-F971-4EE5-91C0-468567314425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D15686E6-F971-4EE5-91C0-468567314425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D15686E6-F971-4EE5-91C0-468567314425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D15686E6-F971-4EE5-91C0-468567314425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
