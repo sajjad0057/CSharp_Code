@@ -36,18 +36,33 @@ Queue<IList<string>> q = new Queue<IList<string>>();
 //}
 
 
-List<string> myList = new List<string> { "apple", "banana", "orange", "grape", "peach", "pear", "kiwi" };
+//List<string> myList = new List<string> { "apple", "banana", "orange", "grape", "peach", "pear", "kiwi" };
 
-int batchSize = 3;
+//int batchSize = 3;
 
-List<List<string>> batches = myList
-    .Select((value, index) => new { Index = index, Value = value })
-    .GroupBy(x => x.Index / batchSize)
-    .Select(x => x.Select(v => v.Value).ToList())
-    .ToList();
+//List<List<string>> batches = myList
+//    .Select((value, index) => new { Index = index, Value = value })
+//    .GroupBy(x => x.Index / batchSize)
+//    .Select(x => x.Select(v => v.Value).ToList())
+//    .ToList();
 
 
 Console.WriteLine();
 
 
+
+
+List<string> myList = new List<string> { "apple", "banana", "orange", "grape", "peach", "pear", "kiwi" };
+int batchSize = 3;
+
+Queue<List<string>> batchQueue = new Queue<List<string>>();
+
+myList.Select((value, index) => new { Index = index, Value = value })
+      .GroupBy(x => x.Index / batchSize)
+      .Select(x => x.Select(v => v.Value).ToList())
+      .ToList()
+      .ForEach(batch => batchQueue.Enqueue(batch));
+
+
+Console.WriteLine();
 
