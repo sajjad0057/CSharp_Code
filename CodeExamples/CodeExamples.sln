@@ -128,7 +128,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManageKeyCountString", "Man
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloudApperInterviewExamples", "CloudApperInterviewExamples\CloudApperInterviewExamples.csproj", "{CDA92959-7048-4E9A-8B19-C1DFB3EB1C90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadImageByUrl", "DownloadImageByUrl\DownloadImageByUrl.csproj", "{31D11B1E-2B63-4374-83C0-31B08CB228A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DownloadImageByUrl", "DownloadImageByUrl\DownloadImageByUrl.csproj", "{31D11B1E-2B63-4374-83C0-31B08CB228A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_Queue", "Practice_Queue\Practice_Queue.csproj", "{6973397C-52B7-4B63-87FA-EA86CE154B44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -380,9 +382,16 @@ Global
 		{31D11B1E-2B63-4374-83C0-31B08CB228A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31D11B1E-2B63-4374-83C0-31B08CB228A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31D11B1E-2B63-4374-83C0-31B08CB228A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6973397C-52B7-4B63-87FA-EA86CE154B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6973397C-52B7-4B63-87FA-EA86CE154B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6973397C-52B7-4B63-87FA-EA86CE154B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6973397C-52B7-4B63-87FA-EA86CE154B44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6973397C-52B7-4B63-87FA-EA86CE154B44} = {09591FB1-851A-48C8-82DD-83FD6431F5BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58782E54-C4CC-4760-A8A0-519992253236}
