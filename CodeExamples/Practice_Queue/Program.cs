@@ -66,21 +66,20 @@ myList.Select((value, index) => new { Index = index, Value = value })
 
 
 
-var select = myList.Select((value, index) => new { Index = index, Value = value });
+//var select = myList.Select((value, index) => new { Index = index, Value = value });
 
-var group = select.GroupBy(x=> testValue(x.Index)).ToList();
+//var group = select.GroupBy(x=> testValue(x.Index)).ToList();
 
-var select2 = group.Select(x => x.Select(v => v.Value).ToList()).ToList();
+//var select2 = group.Select(x => x.Select(v => v.Value).ToList()).ToList();
 
 
-int testValue(int a)
-{
-    Console.WriteLine(a/4);
+//int testValue(int a)
+//{
+//    Console.WriteLine(a/4);
 
-    return a / 4;
-}
+//    return a / 4;
+//}
 
-//Func<int, int> test = testValue;
+////Func<int, int> test = testValue;
 
-Console.WriteLine($"select : {select}");
-
+//Console.WriteLine($"select : {select}");
