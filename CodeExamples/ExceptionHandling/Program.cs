@@ -1,14 +1,7 @@
 ﻿using ExceptionHandling;
 
-
-
-
-
 Console.WriteLine("Practice Exception Handling : ");
 Console.WriteLine("---------------------------------------------------------------------");
-
-
-
 
 int x = 4;
 
@@ -76,4 +69,24 @@ catch (Exception e)
 finally
 {
     Console.WriteLine("Practice User define Exception Handling - ");
+}
+
+Console.WriteLine("===============================================================");
+
+int[] someNums = new int[]{ 1, 4, 5, 0, 7, 3, 0, 9 };
+
+foreach (int num in someNums)
+{
+    try
+    {
+        Console.WriteLine($"Result 20 / {num} = {20/num}");
+    }
+    catch(DivideByZeroException ex )
+    {
+        Console.WriteLine($"Result 20 / {num} = Zero can not be divisor");
+    }
+    catch(Exception ex)
+    {
+        Console.WriteLine($"{ex.Message}");
+    }
 }
