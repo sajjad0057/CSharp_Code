@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Collection_Examples;
+using System.Collections;
 using System.Collections.ObjectModel;
 using System.Text.Json;
 
@@ -205,8 +206,29 @@ list = list.Concat(list1).ToList();
 
 Console.WriteLine(JsonSerializer.Serialize(list));
 
-var list2 = new List<string> { "d", "e", "f" };
 
-list = list.Concat(list2).ToList();
+var testObj = new List<Test>()
+{
+    new Test
+    {
+        Id = "d"
+    },
+    new Test
+    {
+        Id = "d"
+    },
+    new Test
+    {
+        Id = "d"
+    },
+    new Test
+    {
+        Id = "d"
+    }
+};
+
+
+
+list = list.Concat(testObj.Select(x=>x.Id)).ToList();
 
 Console.WriteLine(JsonSerializer.Serialize(list));
