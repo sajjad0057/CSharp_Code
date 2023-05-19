@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.ObjectModel;
+using System.Text.Json;
 
 Console.WriteLine("Example of List : ");
 
@@ -188,3 +189,24 @@ IReadOnlyCollection<int> ints2 = new ReadOnlyCollection<int>(new List<int>{1,2,3
 
 
 Console.WriteLine($"Examples of IReadOnlyCollection , Count : {ints2.Count()} ");
+
+
+Console.WriteLine("********************************************************************************************************");
+Console.WriteLine("********************************************************************************************************");
+
+
+IList<string> list = new List<string>();
+
+Console.WriteLine(JsonSerializer.Serialize(list));
+
+var list1 = new List<string> { "a", "b", "c" };
+
+list = list.Concat(list1).ToList();
+
+Console.WriteLine(JsonSerializer.Serialize(list));
+
+var list2 = new List<string> { "d", "e", "f" };
+
+list = list.Concat(list2).ToList();
+
+Console.WriteLine(JsonSerializer.Serialize(list));
