@@ -1,0 +1,19 @@
+﻿                         Ref	                                                                                            Out
+============================================================================================================================================================================================================
+1. The parameter or argument must be initialized first before it is passed to ref.	        1. It is not compulsory to initialize a parameter or argument before it is passed to an out.
+2. It is not required to assign or initialize the value of a parameter                      2. A called method is required to assign or initialize a value of a parameter 
+    (which is passed by ref) before returning to the calling method.                           (which is passed to an out) before returning to the calling method.
+3. Passing a parameter value by Ref is useful when the called method is also needed         3. Declaring a parameter to an out method is useful when multiple values need to be 
+    to modify the pass parameter.	                                                          returned from a function or method.
+4. It is not compulsory to initialize a parameter value before using it in a                4. A parameter value must be initialized within the calling method before its use.
+    calling method.
+5. When we use REF, data can be passed bi-directionally.	                                5. When we use OUT data is passed only in a unidirectional way (from the called method to the caller method).
+
+- Both ref and out are treated differently at run time and they are treated the same at compile time.
+- Properties are not variables, therefore it cannot be passed as an out or ref parameter.
+
+
+    In
+===========
+The in keyword causes arguments to be passed by reference but ensures the argument is not modified. It makes the formal parameter an alias for the argument,
+which must be a variable. In other words, any operation on the parameter is made on the argument.
