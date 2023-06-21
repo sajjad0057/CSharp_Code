@@ -136,7 +136,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_TDA_Principle", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "in_out_ref_modifiers", "in_out_ref_modifiers\in_out_ref_modifiers.csproj", "{DD34AEF3-7A4A-4A8B-B782-D2B75724C8F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadYoutubeVideo", "UploadYoutubeVideo\UploadYoutubeVideo.csproj", "{4FBD14AC-99B0-48B8-9F76-6F4220044150}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UploadYoutubeVideo", "UploadYoutubeVideo\UploadYoutubeVideo.csproj", "{4FBD14AC-99B0-48B8-9F76-6F4220044150}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTwilio", "TestTwilio\TestTwilio.csproj", "{72768896-BA4E-469F-9728-322101E3C561}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringInterpolations", "StringInterpolations\StringInterpolations.csproj", "{7374DEA0-6489-4B40-AD00-02AFBCFB0A38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -404,6 +408,14 @@ Global
 		{4FBD14AC-99B0-48B8-9F76-6F4220044150}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FBD14AC-99B0-48B8-9F76-6F4220044150}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FBD14AC-99B0-48B8-9F76-6F4220044150}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72768896-BA4E-469F-9728-322101E3C561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72768896-BA4E-469F-9728-322101E3C561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72768896-BA4E-469F-9728-322101E3C561}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72768896-BA4E-469F-9728-322101E3C561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7374DEA0-6489-4B40-AD00-02AFBCFB0A38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7374DEA0-6489-4B40-AD00-02AFBCFB0A38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7374DEA0-6489-4B40-AD00-02AFBCFB0A38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7374DEA0-6489-4B40-AD00-02AFBCFB0A38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
