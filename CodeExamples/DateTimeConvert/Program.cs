@@ -12,3 +12,8 @@ Console.WriteLine($"DateTime.UtcNow : {dateTime}");
 var expariedTime = dateTime.AddHours(1.96);
 
 Console.WriteLine($"dateTime.AddHours(1.96) : {expariedTime}");
+
+var stringTime = DateTime.UtcNow.ToString();
+
+Console.WriteLine($"Test : {DateTime.Parse(stringTime)}");
+Console.WriteLine();
