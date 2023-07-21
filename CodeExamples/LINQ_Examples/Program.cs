@@ -30,11 +30,11 @@ IList<string> stringList = new List<string>
         };
 
 IList<string> searchStrings = new List<string>
-        {
-            "apple",
-            "banana",
-            "strawberry"
-        };
+{
+    "apple",
+    "banana",
+    "strawberry"
+};
 
 IList<string> foundStrings = SearchStringsInList(stringList, searchStrings);
 
