@@ -1,5 +1,5 @@
 ﻿using DateTimeConvert;
-
+using System.Globalization;
 
 Clock c = new Clock();
 Console.WriteLine(c.Convert("01:00 pm"));
@@ -18,10 +18,13 @@ Console.WriteLine($"Test : {DateTime.Parse(stringTime)}");
 Console.WriteLine();
 
 
-//var strDateTime = "Fri, 21 Jul 2023 04:46:06 GMT";
+var strDateTime = "Sun, 23 Jul 2023 17:26:19 -0700";
 
-var strDateTime = DateTime.UtcNow;
-Console.WriteLine($"strDateTime : {Convert.ToDateTime(strDateTime).ToString("yyyy/MM/dd")}");
+var t = strDateTime.Substring(0, 31);
+
+string format = "ddd, dd MMM yyyy HH:mm:ss zzz";
+//var strDateTime = DateTime.UtcNow;
+Console.WriteLine($"strDateTime : {Convert.ToDateTime(t)}");
 
 Console.WriteLine($"{Convert.ToDateTime(null)}");
 
