@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using Practice_LINQ;
+using System.Text.Json;
 using Task3;
 
 List<Course> courses = new List<Course>();
@@ -38,6 +39,9 @@ IList<string> filteredString = new List<string>()
 var result11 = listOfString.Where(e => filteredString.Any(f=>e.Contains(f))).ToList();
 
 Console.WriteLine(JsonSerializer.Serialize(result11));
+
+PracticeGroupBy practiceGroupBy = new PracticeGroupBy();
+practiceGroupBy.TestClass();
 
 Console.WriteLine();
 
