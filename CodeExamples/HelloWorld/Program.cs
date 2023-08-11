@@ -1,10 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Print using Console.WriteLine()
-Console.WriteLine("Hello, World!\n");
+﻿var f = "12 - Front End";
+var y = " 12 - Front End;05 - Right Side-Far Rear;02 - Right Side-Near Front";
+
+foreach(var i in f.Split(';').ToList())
+{
+    Console.WriteLine(i);
+}
 
 
-// Received user defined intput by using Console.ReadLine() 
-Console.WriteLine("Write Your name : \n");
-var x =  Console.ReadLine();
-Console.WriteLine($"\n----------------------\n" +
-    $"Your name : {x}\n");
+foreach (var i in y.Split(';').ToList())
+{
+    Console.WriteLine(i);
+}

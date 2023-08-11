@@ -142,7 +142,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTwilio", "TestTwilio\Te
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringInterpolations", "StringInterpolations\StringInterpolations.csproj", "{7374DEA0-6489-4B40-AD00-02AFBCFB0A38}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A-Z", "A-Z\A-Z.csproj", "{BE8E859A-BCFB-4323-978A-86768E83D34B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A-Z", "A-Z\A-Z.csproj", "{BE8E859A-BCFB-4323-978A-86768E83D34B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonFieldAccess", "JsonFieldAccess\JsonFieldAccess.csproj", "{3227A7DD-52D8-492D-97A0-AFA75EBEB752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueConvertOrParse", "ValueConvertOrParse\ValueConvertOrParse.csproj", "{17EEC947-EE1D-443A-B4AE-18D4C3B1AD2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -422,6 +426,14 @@ Global
 		{BE8E859A-BCFB-4323-978A-86768E83D34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE8E859A-BCFB-4323-978A-86768E83D34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE8E859A-BCFB-4323-978A-86768E83D34B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3227A7DD-52D8-492D-97A0-AFA75EBEB752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3227A7DD-52D8-492D-97A0-AFA75EBEB752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3227A7DD-52D8-492D-97A0-AFA75EBEB752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3227A7DD-52D8-492D-97A0-AFA75EBEB752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EEC947-EE1D-443A-B4AE-18D4C3B1AD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EEC947-EE1D-443A-B4AE-18D4C3B1AD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EEC947-EE1D-443A-B4AE-18D4C3B1AD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EEC947-EE1D-443A-B4AE-18D4C3B1AD2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

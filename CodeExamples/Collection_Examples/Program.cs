@@ -231,4 +231,45 @@ var testObj = new List<Test>()
 
 list = list.Concat(testObj.Select(x=>x.Id)).ToList();
 
+
 Console.WriteLine(JsonSerializer.Serialize(list));
+
+Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Checking Dict key and get match keys<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+
+Dictionary<string, int> dictionary = new Dictionary<string, int>
+        {
+            { "key1", 10 },
+            { "key2", 20 },
+            { "key3", 30 },
+            // Add more key-value pairs
+        };
+
+List<string> keysToCheck = new List<string> { "key1", "key" };
+
+var keysInDictionary = keysToCheck.Intersect(dictionary.Keys);
+
+foreach (string key in keysInDictionary)
+{
+    Console.WriteLine($"Dictionary contains key '{key}' with value {dictionary[key]}");
+}
+
+var keysNotInDictionary = keysToCheck.Except(dictionary.Keys);
+
+foreach (string key in keysNotInDictionary)
+{
+    Console.WriteLine($"Dictionary does not contain key '{key}'");
+}
+
+
+var s = "sajj-ad";
+
+var ss = s.Split(new char[] {';','-'}).ToList();
+
+Console.WriteLine();
+
+
+
+
+
+
+Console.WriteLine();
