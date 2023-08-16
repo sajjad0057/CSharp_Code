@@ -7,4 +7,11 @@ var personDetails = JsonSerializer.Deserialize<PersonDetails>(jsonData);
 
 Console.WriteLine($"{JsonSerializer.Serialize(personDetails)}");
 
+
+string jsonData2 = "{\r\n        \"Street\": \"456 Elm Street\",\r\n        \"City\": \"Somewhereville\",\r\n        \"Country\": \"Canada\"\r\n    }";
+
+dynamic dynamicObj = JsonSerializer.Deserialize<dynamic>(jsonData2);
+
+IDictionary<string,string> keyValuePairs = (IDictionary<string,string>)dynamicObj;
+
 Console.WriteLine();
