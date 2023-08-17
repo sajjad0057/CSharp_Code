@@ -17,6 +17,8 @@ ages.Add(25);
 ages.Add(22);
 ages.Add(23);
 
+var age2 = ages.Take(1);
+
 
 
 

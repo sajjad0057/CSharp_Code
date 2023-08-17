@@ -150,7 +150,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValueConvertOrParse", "Valu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonLoadIntoObjectExample", "JsonLoadIntoObjectExample\JsonLoadIntoObjectExample.csproj", "{CC661DB3-2CEB-490F-B842-D34252D19517}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_If_Else", "Test_If_Else\Test_If_Else.csproj", "{DDA5E51E-D736-4216-8AC5-83BF40567C85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_If_Else", "Test_If_Else\Test_If_Else.csproj", "{DDA5E51E-D736-4216-8AC5-83BF40567C85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeGenericMethod", "PracticeGenericMethod\PracticeGenericMethod.csproj", "{DBEAEF61-613D-4661-83F8-6C1865D4773D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -446,6 +448,10 @@ Global
 		{DDA5E51E-D736-4216-8AC5-83BF40567C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDA5E51E-D736-4216-8AC5-83BF40567C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDA5E51E-D736-4216-8AC5-83BF40567C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBEAEF61-613D-4661-83F8-6C1865D4773D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBEAEF61-613D-4661-83F8-6C1865D4773D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBEAEF61-613D-4661-83F8-6C1865D4773D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBEAEF61-613D-4661-83F8-6C1865D4773D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
