@@ -1,4 +1,5 @@
 ﻿using PracticeGenericMethod;
+using System.Dynamic;
 using System.Text.Json;
 
 Student student1 = new Student();
@@ -21,3 +22,28 @@ ObjInitializer<Student>(student1);
 ObjInitializer<ClassInfo>(classInfo1);
 Console.WriteLine();
 
+
+IList<string> list = new List<string> { "a", "b", "c", "d" };
+
+Array listMethod(IList<string> list)
+{
+    return list.ToArray();
+}
+
+
+foreach(string str in listMethod(list))
+{
+    Console.WriteLine(str);
+}
+
+
+dynamic dObj = new Student
+{
+    Id = 1,
+    Name = "sajjad",
+    Age = 26
+};
+
+Student s = dObj;
+
+Console.WriteLine();

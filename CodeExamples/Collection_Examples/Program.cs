@@ -269,9 +269,4 @@ var ss = s.Split(new char[] {';','-'}).ToList();
 
 Console.WriteLine();
 
-
-
-
-
-
 Console.WriteLine();
