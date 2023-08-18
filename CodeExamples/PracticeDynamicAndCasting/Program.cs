@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿dynamic dObj = new Student
+{
+    Id = 1,
+    Name = "sajjad",
+    Age = 26
+};
+
+Student s = dObj;
+
+Console.WriteLine();
