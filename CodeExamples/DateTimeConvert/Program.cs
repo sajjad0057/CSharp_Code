@@ -25,12 +25,19 @@ string format = "ddd, dd MMM yyyy HH:mm:ss zzz";
 
 
 string testtttt = "Tue, 25 Jul 2023 08:13:56 GMT";
+
+var testDateTime = Convert.ToDateTime(testtttt);
 //var strDateTime = DateTime.UtcNow;
-Console.WriteLine($"strDateTime testtttt:{Convert.ToDateTime(testtttt)}");
+Console.WriteLine($"strDateTime testtttt:{testDateTime.Year}");
 
 Console.WriteLine($"{Convert.ToDateTime(null)}");
 
-var x = "ama r";
+TimeSpan duration = new TimeSpan(1, 12, 23, 62);
+Console.WriteLine($"Time of Travel: {duration.ToString("c")}");
 
+DateTime dateTime1 = DateTime.UtcNow;
 
-Console.WriteLine($"xLength: {x.Length}");
+Console.WriteLine($"dateTime1 : {dateTime1}");
+DateTime dateTime2 = dateTime1.FormatCustom("yyyy-MM-ddTHH:mm:ss");
+Console.WriteLine($"DateTime1 Formated : {dateTime2}");
+Console.WriteLine();

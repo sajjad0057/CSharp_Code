@@ -154,7 +154,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test_If_Else", "Test_If_Els
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeGenericMethod", "PracticeGenericMethod\PracticeGenericMethod.csproj", "{DBEAEF61-613D-4661-83F8-6C1865D4773D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeDynamicAndCasting", "PracticeDynamicAndCasting\PracticeDynamicAndCasting.csproj", "{B6A0A16E-B593-4CB3-AAEF-A76A816E9F7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeDynamicAndCasting", "PracticeDynamicAndCasting\PracticeDynamicAndCasting.csproj", "{B6A0A16E-B593-4CB3-AAEF-A76A816E9F7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoapServiceAuthPractice", "SoapServiceAuthPractice\SoapServiceAuthPractice.csproj", "{A86B3520-1DBA-43EA-92EF-6BF4CB40B943}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -458,6 +460,10 @@ Global
 		{B6A0A16E-B593-4CB3-AAEF-A76A816E9F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6A0A16E-B593-4CB3-AAEF-A76A816E9F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6A0A16E-B593-4CB3-AAEF-A76A816E9F7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A86B3520-1DBA-43EA-92EF-6BF4CB40B943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A86B3520-1DBA-43EA-92EF-6BF4CB40B943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A86B3520-1DBA-43EA-92EF-6BF4CB40B943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A86B3520-1DBA-43EA-92EF-6BF4CB40B943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
