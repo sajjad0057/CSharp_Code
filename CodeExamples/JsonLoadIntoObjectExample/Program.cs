@@ -12,6 +12,18 @@ string jsonData2 = "{\r\n        \"Street\": \"456 Elm Street\",\r\n        \"Ci
 
 dynamic dynamicObj = JsonSerializer.Deserialize<dynamic>(jsonData2);
 
-IDictionary<string,string> keyValuePairs = (IDictionary<string,string>)dynamicObj;
+//IDictionary<string,string> keyValuePairs = (IDictionary<string,string>)dynamicObj;
+
+Console.WriteLine();
+
+
+Person p1 = new Person
+{
+    Name = "Foo",
+    Age = 1,
+};
+
+
+Console.WriteLine($"Person - p1: {JsonSerializer.Serialize(p1)}");
 
 Console.WriteLine();
