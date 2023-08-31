@@ -1,0 +1,7 @@
+﻿This is a behavioral pattern that allows defining multiple strategies to resolve a problem.
+
+Factory Pattern Vs Strategy Pattern : 
+===================================================
+
+Factory’s sole purpose is to create objects and strategy’s sole intent to is to provide a mechanism to select/run 
+different algorithm.

@@ -158,7 +158,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeDynamicAndCasting",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoapServiceAuthPractice", "SoapServiceAuthPractice\SoapServiceAuthPractice.csproj", "{A86B3520-1DBA-43EA-92EF-6BF4CB40B943}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeIEualityComparer_Interface", "PracticeIEualityComparer_Interface\PracticeIEualityComparer_Interface.csproj", "{433A5460-97EE-4097-B640-3D5A9B41E203}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeIEualityComparer_Interface", "PracticeIEualityComparer_Interface\PracticeIEualityComparer_Interface.csproj", "{433A5460-97EE-4097-B640-3D5A9B41E203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehavioralDesignPattern", "BehabioralDesignPattern\BehavioralDesignPattern.csproj", "{6155F26C-CAF9-45B8-91EF-6EC900170891}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -470,6 +472,10 @@ Global
 		{433A5460-97EE-4097-B640-3D5A9B41E203}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{433A5460-97EE-4097-B640-3D5A9B41E203}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{433A5460-97EE-4097-B640-3D5A9B41E203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6155F26C-CAF9-45B8-91EF-6EC900170891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6155F26C-CAF9-45B8-91EF-6EC900170891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6155F26C-CAF9-45B8-91EF-6EC900170891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6155F26C-CAF9-45B8-91EF-6EC900170891}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
