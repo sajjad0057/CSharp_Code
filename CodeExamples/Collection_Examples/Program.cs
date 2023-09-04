@@ -269,4 +269,30 @@ var ss = s.Split(new char[] {';','-'}).ToList();
 
 Console.WriteLine();
 
+Console.WriteLine(">>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>><<<<<<<<<<<<");
+
+/*
+
+Capacity is the number of elements that the ArrayList can store.
+Count is the number of elements that are actually in the ArrayList.
+
+Capacity is always greater than or equal to Count. If Count exceeds Capacity while adding elements,
+The capacity is automatically increased by reallocating the internal array before copying the old elements
+and adding the new elements. 
+ 
+*/
+
+
+ArrayList arrList = new ArrayList(2);
+
+arrList.Add("key1");
+arrList.Add("C");
+arrList.Add("ccc");
+arrList.Add("llll");
+
+foreach (string key in arrList)
+{
+    Console.WriteLine($"arr List :{key}");
+}
+
 Console.WriteLine();
