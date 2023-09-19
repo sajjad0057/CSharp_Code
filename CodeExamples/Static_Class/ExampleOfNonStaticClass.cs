@@ -1,7 +1,8 @@
 ﻿namespace Static_Class
 {
-    public static class ExampleOfStaticClass
+    public class ExampleOfNonStaticClass
     {
         public static string? Name { get; set; }
+        public int Id { get; set; }
     }
 }

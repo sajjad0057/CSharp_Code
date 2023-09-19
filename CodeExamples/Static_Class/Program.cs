@@ -39,9 +39,24 @@ Console.WriteLine(Waterbottle.count);
 
 // Example of static class and uses of static class 
 
-ExampleOfStaticClass.printArray(new int[] { 1, 2, 3, 4, 5, 6, });
+ExOfStaticClass.printArray(new int[] { 1, 2, 3, 4, 5, 6, });
 
 Console.WriteLine("\n-----------------------------------------------------");
 
-ExampleOfStaticClass.print2DArray(new int[,] { { 1, 2, 3, }, { 4, 5, 2 }, { 34, 465, 6 } });
+ExOfStaticClass.print2DArray(new int[,] { { 1, 2, 3, }, { 4, 5, 2 }, { 34, 465, 6 } });
+
+Console.WriteLine("<<<========================================================================================>>>");
+
+ExampleOfNonStaticClass.Name = "sajjad";
+ExampleOfStaticClass.Name = "zahan";
+Console.WriteLine($"ExampleOfNonStaticClass.Name : {ExampleOfNonStaticClass.Name};\n" +
+    $" ExampleOfStaticClass.Name : {ExampleOfStaticClass.Name};\n" +
+    $"--------------------------------------------------------------------------------------------");
+ExampleOfNonStaticClass.Name = "sajjad hossain";
+ExampleOfStaticClass.Name = "hosne zahan";
+Console.WriteLine($"ExampleOfNonStaticClass.Name : {ExampleOfNonStaticClass.Name};\n" +
+    $" ExampleOfStaticClass.Name : {ExampleOfStaticClass.Name};");
+
+
+Console.WriteLine();
 

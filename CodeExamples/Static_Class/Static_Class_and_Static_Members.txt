@@ -8,3 +8,12 @@ The following list provides the main features of a static class:
 	-> Is sealed.
 
 	-> Cannot contain Instance Constructors. But Contain Static Constructors .
+
+============================================================================================================================================
+	
+	In summary, the main difference between static properties in a static class and a non-static class is that a static class cannot be
+	instantiated, and its static properties are accessed only through the class name, while a non-static class can be instantiated, and
+	its static properties can be accessed through both the class name and instances of the class. The choice of which to use depends on
+	your design requirements and whether you need to associate the static property with instances of the class or not.
+
+============================================================================================================================================

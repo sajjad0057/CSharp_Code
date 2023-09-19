@@ -283,16 +283,26 @@ and adding the new elements.
 */
 
 
-ArrayList arrList = new ArrayList(2);
+ArrayList arrList = new ArrayList();
 
-arrList.Add("key1");
-arrList.Add("C");
-arrList.Add("ccc");
-arrList.Add("llll");
+ArrayList arrList1 = new ArrayList();
 
-foreach (string key in arrList)
-{
-    Console.WriteLine($"arr List :{key}");
-}
+arrList1.Add("key1");
+arrList1.Add("C");
+arrList1.Add("ccc");
+
+ArrayList arrList2 = new ArrayList();
+
+arrList2.Add("llll");
+arrList2.Add("ll");
+arrList2.Add("l");
+
+arrList.AddRange(new ArrayList());
+
+arrList.AddRange(arrList1);
+arrList.AddRange(arrList2);
+
+
+arrList = arrList.GetRange(0, 2);
 
 Console.WriteLine();

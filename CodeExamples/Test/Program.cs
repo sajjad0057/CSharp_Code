@@ -1,29 +1,22 @@
-﻿int n = int.Parse(Console.ReadLine());
+﻿string st = string.Empty;
+
+IList<string> fields = st.Split(';').ToList();
+foreach (string field in fields)
+    Console.WriteLine($"field : {field}");
+
+Console.WriteLine("-----------------------------");
 
 
-List<List<int>> testcase = new List<List<int>>();
+var strr = st.Split(";")[0];
 
-for(int i = 0; i < n; i++)
+string res = string.Empty;
+var l = res?.Split("-").ToList();
+
+foreach(var i in l)
 {
-    List<int> list = Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToList();
-    testcase.Add(list);
+    Console.WriteLine();
 }
 
-int k = 0;
-int sum = 0;
 
-for(int i = 0; i < n; i++)
-{
-    k = testcase[i][3];
-    for(int j= 0; j < 3; j++)
-    {
-        sum+=testcase[i][j];
-    }
-    if ((sum / 3) % k == 0)
-    {
-        Console.WriteLine($"Case {i + 1}: Peaceful");
-    }
-    else {
-        Console.WriteLine($"Case {i + 1}: Fight");
-    }
-}
+Console.WriteLine();
+
