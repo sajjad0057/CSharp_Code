@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Test;
+﻿using CheckToListOfDict;
 
 IList<IDictionary<string, dynamic>> list1 = new List<IDictionary<string, dynamic>>
 {
@@ -39,29 +38,22 @@ IList<IDictionary<string, dynamic>> list2 = new List<IDictionary<string, dynamic
     },
     new Dictionary<string, dynamic>
     {
-       {"Id", "222"},
+       {"Id", "2"},
        {"Age", 35},
        {"IsStudent", true}
     },
     new Dictionary<string, dynamic>
     {
        {"Id", "3"},
-       {"Age", 45},
-       {"IsStudent", true}
-    },
-    new Dictionary<string, dynamic>
-    {
-       {"Id", "44"},
-       {"Age", 55},
        {"IsStudent", true}
     }
 };
 
 // Intersect the two lists based on the "Id" key
-var intersectedDictionaries = list1.Except(list2, new DictionaryIdComparer()).ToList();
+var exceptDictionaries = list2.Intersect(list1, new DictionaryIdComparer()).ToList();
 
 // Print the intersected dictionaries
-foreach (var dictionary in intersectedDictionaries)
+foreach (var dictionary in exceptDictionaries)
 {
     Console.WriteLine("Intersected Dictionary:");
     foreach (var kvp in dictionary)
