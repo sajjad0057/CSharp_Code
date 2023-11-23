@@ -1,13 +1,33 @@
-﻿var f = "12 - Front End";
-var y = " 12 - Front End;05 - Right Side-Far Rear;02 - Right Side-Near Front";
+﻿using Newtonsoft.Json;
 
-foreach(var i in f.Split(';').ToList())
+public class YourClass
 {
-    Console.WriteLine(i);
+    public string Name { get; set; }
+    public List<string> Items { get; set; }
+
+    public bool ShouldSerializeItems()
+    {
+        // Do not serialize the "Items" property if it is null or empty.
+        return Items != null && Items.Count > 0;
+    }
 }
 
-
-foreach (var i in y.Split(';').ToList())
+class Program
 {
-    Console.WriteLine(i);
+    static void Main()
+    {
+        YourClass obj = new YourClass
+        {
+  // This list will be ignored during serialization if empty.
+        };
+
+        JsonSerializerSettings settings = new JsonSerializerSettings
+        {
+            DefaultValueHandling = DefaultValueHandling.Ignore
+        };
+
+        string json = JsonConvert.SerializeObject(obj, Formatting.Indented, settings);
+
+        Console.WriteLine(json);
+    }
 }

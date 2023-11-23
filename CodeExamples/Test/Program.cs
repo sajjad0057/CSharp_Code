@@ -1,19 +1,7 @@
-﻿using Test;
-
-string inputString = "Value21";
+﻿var x = "ss";
 
 
-MyEnum enumValue;
-
-if (Enum.IsDefined(typeof(MyEnum), inputString) && Enum.TryParse(inputString, out enumValue))
-{
-    // The string exists in the enum
-    Console.WriteLine($"{inputString} is a valid value in MyEnum.");
-}
-else
-{
-    // The string does not exist in the enum
-    Console.WriteLine($"{inputString} is not a valid value in MyEnum.");
-}
-
-Console.WriteLine();
+if(x == "ss")
+    Console.WriteLine(x+1);
+if(x == "ss")
+    Console.WriteLine(x+2);
