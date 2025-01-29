@@ -1,29 +1,17 @@
-﻿int n = int.Parse(Console.ReadLine());
+﻿
 
+List<Dictionary<string, string>> dictList1 = new();
 
-List<List<int>> testcase = new List<List<int>>();
-
-for(int i = 0; i < n; i++)
+List<Dictionary<string, string>> dictList2 = new List<Dictionary<string, string>>()
 {
-    List<int> list = Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToList();
-    testcase.Add(list);
-}
-
-int k = 0;
-int sum = 0;
-
-for(int i = 0; i < n; i++)
-{
-    k = testcase[i][3];
-    for(int j= 0; j < 3; j++)
+    new Dictionary<string, string>
     {
-        sum+=testcase[i][j];
-    }
-    if ((sum / 3) % k == 0)
-    {
-        Console.WriteLine($"Case {i + 1}: Peaceful");
-    }
-    else {
-        Console.WriteLine($"Case {i + 1}: Fight");
-    }
-}
+        {"name","name1" },
+        {"name","name1" }
+
+    },
+};
+
+
+Console.WriteLine();
+

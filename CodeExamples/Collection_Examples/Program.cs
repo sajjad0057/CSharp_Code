@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using Collection_Examples;
+using System.Collections;
 using System.Collections.ObjectModel;
+using System.Text.Json;
 
 Console.WriteLine("Example of List : ");
 
@@ -14,6 +16,8 @@ List<int> ages = new List<int>();
 ages.Add(25);
 ages.Add(22);
 ages.Add(23);
+
+var age2 = ages.Take(1);
 
 
 
@@ -188,3 +192,117 @@ IReadOnlyCollection<int> ints2 = new ReadOnlyCollection<int>(new List<int>{1,2,3
 
 
 Console.WriteLine($"Examples of IReadOnlyCollection , Count : {ints2.Count()} ");
+
+
+Console.WriteLine("********************************************************************************************************");
+Console.WriteLine("********************************************************************************************************");
+
+
+IList<string> list = new List<string>();
+
+Console.WriteLine(JsonSerializer.Serialize(list));
+
+var list1 = new List<string> { "a", "b", "c" };
+
+list = list.Concat(list1).ToList();
+
+Console.WriteLine(JsonSerializer.Serialize(list));
+
+
+var testObj = new List<Test>()
+{
+    new Test
+    {
+        Id = "d"
+    },
+    new Test
+    {
+        Id = "d"
+    },
+    new Test
+    {
+        Id = "d"
+    },
+    new Test
+    {
+        Id = "d"
+    }
+};
+
+
+
+list = list.Concat(testObj.Select(x=>x.Id)).ToList();
+
+
+Console.WriteLine(JsonSerializer.Serialize(list));
+
+Console.WriteLine(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Checking Dict key and get match keys<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
+
+Dictionary<string, int> dictionary = new Dictionary<string, int>
+        {
+            { "key1", 10 },
+            { "key2", 20 },
+            { "key3", 30 },
+            // Add more key-value pairs
+        };
+
+List<string> keysToCheck = new List<string> { "key1", "key" };
+
+var keysInDictionary = keysToCheck.Intersect(dictionary.Keys);
+
+foreach (string key in keysInDictionary)
+{
+    Console.WriteLine($"Dictionary contains key '{key}' with value {dictionary[key]}");
+}
+
+var keysNotInDictionary = keysToCheck.Except(dictionary.Keys);
+
+foreach (string key in keysNotInDictionary)
+{
+    Console.WriteLine($"Dictionary does not contain key '{key}'");
+}
+
+
+var s = "sajj-ad";
+
+var ss = s.Split(new char[] {';','-'}).ToList();
+
+Console.WriteLine();
+
+Console.WriteLine(">>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>><<<<<<<<<<<<");
+
+/*
+
+Capacity is the number of elements that the ArrayList can store.
+Count is the number of elements that are actually in the ArrayList.
+
+Capacity is always greater than or equal to Count. If Count exceeds Capacity while adding elements,
+The capacity is automatically increased by reallocating the internal array before copying the old elements
+and adding the new elements. 
+ 
+*/
+
+
+ArrayList arrList = new ArrayList();
+
+ArrayList arrList1 = new ArrayList();
+
+arrList1.Add("key1");
+arrList1.Add("C");
+arrList1.Add("ccc");
+
+ArrayList arrList2 = new ArrayList();
+
+arrList2.Add("llll");
+arrList2.Add("ll");
+arrList2.Add("l");
+
+arrList.AddRange(new ArrayList());
+
+arrList.AddRange(arrList1);
+arrList.AddRange(arrList2);
+
+
+arrList = arrList.GetRange(0, 2);
+
+Console.WriteLine();
