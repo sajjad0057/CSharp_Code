@@ -37,4 +37,10 @@ MoveItem(bus);
 bus.Stop();  // called from Bus Class , Coz Here Stop() is Bus class Method                                                                                                                                                                                                                                                                                                                                                                                                                        
 
 
+Console.WriteLine("-------------------------------------------------");
 
+CacheStorage cacheStorage = new CacheStorage();
+cacheStorage.StoreData("u1", "sajjad");
+var val = cacheStorage.FetchData("u1");
+
+Console.WriteLine($"if key u1 then value = {val}");
