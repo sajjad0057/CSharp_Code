@@ -1,6 +1,7 @@
 ﻿using CreationalDesignPatterns.CreationalDesignPatterns.AbstractFactory;
 using CreationalDesignPatterns.CreationalDesignPatterns.BuilderPattern;
 using CreationalDesignPatterns.CreationalDesignPatterns.Factory;
+using CreationalDesignPatterns.CreationalDesignPatterns.Factory.Example_1;
 
 
 #region FactoryMethodPattern
@@ -14,6 +15,9 @@ using CreationalDesignPatterns.CreationalDesignPatterns.Factory;
 //var car = CarFactory.CreateCar( carBrandName );
 
 //Console.WriteLine($"Model : {car.Model}; Color : {car.Color};");
+
+var notification = NotificationFactory.CreateNotification("SMS");
+notification.Send("Hello!");  // Output: SMS Sent: Hello!
 
 #endregion
 
