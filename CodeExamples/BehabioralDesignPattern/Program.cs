@@ -1,4 +1,5 @@
-﻿using BehavioralDesignPattern.StrategyPattern;
+﻿using BehavioralDesignPattern.Example_1;
+using BehavioralDesignPattern.StrategyPattern;
 
 Console.WriteLine($"<================= PRACTICE BEHAVIORAL DESIGN PATTERN =====================>");
 
@@ -20,4 +21,12 @@ var seniorTotal = calculatorContext.Calculate(reports);
 Console.WriteLine($"Total amount for senior salaries is: {seniorTotal}");
 Console.WriteLine($"Total cost for all the salaries is: {juniorTotal + seniorTotal}");
 
+#endregion
+
+
+
+#region Strategy Design Pattern Example 1
+
+PaymentContext paymentContext = new PaymentContext(new PayPalPayment());
+paymentContext.ExecutePayment(300);
 #endregion
