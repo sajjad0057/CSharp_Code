@@ -170,6 +170,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeComposition", "Prac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P_CustomAttribute", "P_CustomAttribute\P_CustomAttribute.csproj", "{BF3DC381-C43E-44E2-8695-65BF3F0620A1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExample_2", "ArrayExample_2\ArrayExample_2.csproj", "{8538F4EF-926C-4A84-92EC-505CBDDD077C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -826,6 +828,14 @@ Global
 		{BF3DC381-C43E-44E2-8695-65BF3F0620A1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF3DC381-C43E-44E2-8695-65BF3F0620A1}.Release|x64.ActiveCfg = Release|Any CPU
 		{BF3DC381-C43E-44E2-8695-65BF3F0620A1}.Release|x64.Build.0 = Release|Any CPU
+		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Debug|x64.Build.0 = Debug|Any CPU
+		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Release|x64.ActiveCfg = Release|Any CPU
+		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
