@@ -172,6 +172,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P_CustomAttribute", "P_Cust
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayExample_2", "ArrayExample_2\ArrayExample_2.csproj", "{8538F4EF-926C-4A84-92EC-505CBDDD077C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12_New", "CSharp12_New\CSharp12_New.csproj", "{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -836,6 +838,14 @@ Global
 		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Release|x64.ActiveCfg = Release|Any CPU
 		{8538F4EF-926C-4A84-92EC-505CBDDD077C}.Release|x64.Build.0 = Release|Any CPU
+		{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}.Debug|x64.Build.0 = Debug|Any CPU
+		{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}.Release|x64.ActiveCfg = Release|Any CPU
+		{623C5CB5-ECBE-4C32-B487-7FBDE40CBA4A}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
