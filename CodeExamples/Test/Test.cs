@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Test
 {
-    public enum MyEnum
+    public class Coupon
     {
-        Value1,
-        Value2,
-        Value3
+        public string Name { get; set; } = string.Empty;
+        public int Amount { get; set; }
     }
 }

@@ -1,20 +1,25 @@
-﻿Console.WriteLine($"{{\"Hello\": \"{1+1}\"}}");
-
-Console.WriteLine("-------------------Test Collections -----------------------");
+﻿using StringInterpolations;
 
 
-var data = new[]
+Console.WriteLine("if want to exists press X");
+while (true)
 {
-        new KeyValuePair<string, string>("name", "John Doe"),
-        new KeyValuePair<string, string>("email", "johndoe@example.com"),
-};
+    Console.WriteLine("Put bank account : ");
+    string bank_account_no = Console.ReadLine();
 
-var dict = new Dictionary<string, string>()
-{
-    {"x1","y1"},
-    {"x2","y2"}, 
-    {"x3","y3"},
-    {"x4","y4"}
-};
+    if(bank_account_no.Equals("X"))
+        break;
+    string modified_bank_account_no = StringInterpolation.MaskMiddlePart1(bank_account_no);
+    Console.WriteLine(modified_bank_account_no);
 
-Console.WriteLine();
+}
+
+Console.WriteLine("Range Operator in c#");
+Console.WriteLine("sajjad"[..]);
+
+
+
+    
+
+
+
