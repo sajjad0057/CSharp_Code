@@ -51,3 +51,16 @@ func2(ref person1);
 Console.WriteLine(JsonSerializer.Serialize(person1));
 
 Console.WriteLine();
+
+
+void testF(params string[] x)
+{
+    foreach (var x2 in x)
+    {
+        Console.WriteLine(x2 + " ");
+    }
+
+}
+
+
+testF("x", "y", "z");
