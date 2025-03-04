@@ -1,4 +1,6 @@
-﻿dynamic dObj = new Student
+﻿using System.Dynamic;
+
+dynamic dObj = new Student
 {
     Id = 1,
     Name = "sajjad",
@@ -19,4 +21,13 @@ byte xByte = (byte)x;
 
 Console.WriteLine((int)(xByte+1));
 Console.WriteLine();
+
+
+dynamic expandObj = new ExpandoObject();
+
+expandObj.Id = 1;
+expandObj.Id = null;
+expandObj.Id = expandObj.Id ?? "expandObj.Id is null";
+
+Console.WriteLine($"after expandObj.Id : {expandObj.Id}");
 
