@@ -306,3 +306,37 @@ arrList.AddRange(arrList2);
 arrList = arrList.GetRange(0, 2);
 
 Console.WriteLine();
+
+
+
+Console.WriteLine("###################################################");
+
+
+List<string> listis = new List<string>();
+Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
+
+List<string> l1 = new List<string> { "sqqq" };
+List<string> l2= new List<string>();
+
+listis.AddRange(l1);
+//listis.AddRange(l2);
+
+
+
+
+
+
+if (listis.Any() && listis.Count>1)
+{
+    Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
+}
+else
+{
+    var ssss = listis.FirstOrDefault();
+    Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
+}
+
+
+
+
+Console.WriteLine($"HubResponse : {JsonSerializer.Serialize(HubResponse<object>.Fail(500, "error"))}");

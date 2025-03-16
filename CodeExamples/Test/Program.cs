@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text.Json;
 using Test;
 
@@ -62,6 +63,20 @@ else
 {
     Console.WriteLine("true 4");
 }
-isTrue
 
+
+
+Coupon? x()
+{
+    Coupon? coupon = new();
+
+    return coupon;
+}
+
+
+Console.WriteLine($"Coupon : {JsonSerializer.Serialize(x())}");
+
+var assembly = Assembly.GetExecutingAssembly();
+
+Console.WriteLine($"assembly : {assembly}");
 
