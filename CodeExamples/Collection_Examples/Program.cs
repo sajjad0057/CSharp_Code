@@ -315,11 +315,18 @@ Console.WriteLine("###################################################");
 List<string> listis = new List<string>();
 Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
 
-List<string> l1 = new List<string> { "sqqq" };
-List<string> l2= new List<string>();
+//List<string> l1 = new List<string> { "sqqq" };
+//List<string> l2= new List<string>();
 
-listis.AddRange(l1);
+//listis.AddRange(l1);
 //listis.AddRange(l2);
+
+
+string sx = "sat";
+
+var sxl = sx.Split(new char[] {';',','}).ToList();
+
+listis.AddRange(sxl);
 
 
 
@@ -330,11 +337,10 @@ if (listis.Any() && listis.Count>1)
 {
     Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
 }
-else
-{
+
     var ssss = listis.FirstOrDefault();
     Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
-}
+
 
 
 
