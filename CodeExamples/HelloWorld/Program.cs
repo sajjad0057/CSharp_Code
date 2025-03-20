@@ -30,5 +30,16 @@ string str = "{\n  \"id\": \"acct_1BId6RLXHc95GG1E\",\n  \"object\": \"account\"
 
 object obj = JsonSerializer.Deserialize<object>(str);
 
-Console.WriteLine($"str object : {JsonSerializer.Serialize(obj)}")
+Console.WriteLine($"str object : {JsonSerializer.Serialize(obj)}");
+
+
+Dictionary<string, string> dict = 
+    new Dictionary<string, string>() { { "n1", "nsss" }, { "n2", "nxxx" } };
+
+
+Console.WriteLine($"dict n1 : {dict.GetValueOrDefault("n1")}");
+Console.WriteLine($"dict n11 : {dict.GetValueOrDefault("n11")}");
+
+
+
 
