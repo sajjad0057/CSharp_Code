@@ -36,9 +36,10 @@ Console.WriteLine($"str object : {JsonSerializer.Serialize(obj)}");
 Dictionary<string, string> dict = 
     new Dictionary<string, string>() { { "n1", "nsss" }, { "n2", "nxxx" } };
 
+var nxxx1 = dict.GetValueOrDefault("n11");
 
 Console.WriteLine($"dict n1 : {dict.GetValueOrDefault("n1")}");
-Console.WriteLine($"dict n11 : {dict.GetValueOrDefault("n11")}");
+Console.WriteLine($"dict n11 : {nxxx1}");
 
 
 

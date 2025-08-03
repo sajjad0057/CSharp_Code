@@ -41,3 +41,18 @@ Console.WriteLine($"dateTime1 : {dateTime1}");
 DateTime dateTime2 = dateTime1.FormatCustom("yyyy-MM-ddTHH:mm:ss");
 Console.WriteLine($"DateTime1 Formated : {dateTime2}");
 Console.WriteLine();
+
+
+
+Console.WriteLine("=================================================================");
+
+
+string fromDateString = "2020-04-04";
+
+DateTime? dateTime3 = null;
+
+if(DateTime.TryParseExact(fromDateString, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture,
+    System.Globalization.DateTimeStyles.None, out DateTime dateTimex))
+{
+    dateTime3 = dateTimex;
+}

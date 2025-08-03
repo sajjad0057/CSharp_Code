@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Net.Http.Headers;
 using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 using Test;
 
@@ -79,4 +80,15 @@ Console.WriteLine($"Coupon : {JsonSerializer.Serialize(x())}");
 var assembly = Assembly.GetExecutingAssembly();
 
 Console.WriteLine($"assembly : {assembly}");
+
+
+
+
+var qpn = new Coupon();
+
+exfunc(qpn.X, qpn.Y);
+void exfunc(string x, string y)
+{
+    Console.WriteLine($"X : {x}; Y : {y}");
+}
 

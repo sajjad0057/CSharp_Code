@@ -10,5 +10,7 @@ namespace Test
     {
         public string Name { get; set; } = string.Empty;
         public int Amount { get; set; }
+        public string X { get; set; } = string.Empty;
+        public string Y { get; set; }
     }
 }

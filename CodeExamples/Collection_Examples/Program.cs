@@ -346,3 +346,16 @@ if (listis.Any() && listis.Count>1)
 
 
 Console.WriteLine($"HubResponse : {JsonSerializer.Serialize(HubResponse<object>.Fail(500, "error"))}");
+
+
+
+
+Dictionary<string, string> listOfDict11 = new Dictionary<string, string> 
+{
+    {"x1","y1" },
+    {"x2","y2" },
+    {"x3","y3" },
+    {"x4","y4" },
+};
+
+Console.WriteLine($"listOfDict11 : {JsonSerializer.Serialize(listOfDict11)}");
