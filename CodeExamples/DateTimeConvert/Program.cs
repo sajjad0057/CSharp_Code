@@ -47,12 +47,21 @@ Console.WriteLine();
 Console.WriteLine("=================================================================");
 
 
-string fromDateString = "2020-04-04";
+//string fromDateString = "2020-04-04";
+DateTime fromDateString = DateTime.Now;
 
 DateTime? dateTime3 = null;
 
-if(DateTime.TryParseExact(fromDateString, "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture,
-    System.Globalization.DateTimeStyles.None, out DateTime dateTimex))
-{
-    dateTime3 = dateTimex;
-}
+//if (DateTime.TryParseExact(fromDateString.ToString(), "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture,
+//    System.Globalization.DateTimeStyles.None, out DateTime dateTimex))
+//{
+//    dateTime3 = dateTimex;
+
+//    Console.WriteLine($"dateTime3 : " + dateTime3);
+//}
+
+
+var dateTimex = DateTime.ParseExact(fromDateString.ToString("yyyy-MM-dd"), "yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture);
+
+
+Console.WriteLine($"dateTimex : " + dateTimex);
