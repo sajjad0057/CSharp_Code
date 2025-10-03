@@ -1,20 +1,52 @@
-﻿Console.WriteLine($"{{\"Hello\": \"{1+1}\"}}");
+﻿using System.Dynamic;
+using System.Runtime.Serialization.Json;
+using System.Text.Json;
+using StringInterpolations;
 
-Console.WriteLine("-------------------Test Collections -----------------------");
 
-
-var data = new[]
+Console.WriteLine("if want to exists press X");
+while (true)
 {
-        new KeyValuePair<string, string>("name", "John Doe"),
-        new KeyValuePair<string, string>("email", "johndoe@example.com"),
-};
+    Console.WriteLine("Put bank account : ");
+    string bank_account_no = Console.ReadLine();
 
-var dict = new Dictionary<string, string>()
-{
-    {"x1","y1"},
-    {"x2","y2"}, 
-    {"x3","y3"},
-    {"x4","y4"}
-};
+    if(bank_account_no.Equals("X"))
+        break;
+    string modified_bank_account_no = StringInterpolation.MaskMiddlePart1(bank_account_no);
+    Console.WriteLine(modified_bank_account_no);
+
+}
+
+Console.WriteLine("Range Operator in c#");
+Console.WriteLine("sajjad"[..]);
+
+
+string str = string.Empty;
+
+dynamic ex = new ExpandoObject();
+
+str = "1";
+ex.a1 = str;
+str = "2";
+ex.b1 = str;
+str = "3";
+ex.c1 = str;
+str = "4";
+ex.d1 = str;
+str = "5";
+ex.e1 = str;
+Console.WriteLine($"ex : {JsonSerializer.Serialize(ex)}");
 
 Console.WriteLine();
+
+
+
+
+
+
+
+
+    
+
+
+

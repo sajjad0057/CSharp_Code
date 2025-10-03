@@ -1,4 +1,6 @@
-﻿using Generics_Examples;
+﻿using System.Text.Json;
+using Generics_Examples;
+using Microsoft.AspNetCore.Http;
 
 
 
@@ -53,3 +55,9 @@ if we to use generalized Then , here we don't need generics , we can do just imp
 Initate object from interface . 
  
  */
+
+
+
+Console.WriteLine("======================================================");
+
+Console.WriteLine($"ApiResult : {JsonSerializer.Serialize(ApiResults<object>.Fail(StatusCodes.Status409Conflict,"Hahaha","fffff","ttttt"))}");

@@ -306,3 +306,56 @@ arrList.AddRange(arrList2);
 arrList = arrList.GetRange(0, 2);
 
 Console.WriteLine();
+
+
+
+Console.WriteLine("###################################################");
+
+
+List<string> listis = new List<string>();
+Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
+
+//List<string> l1 = new List<string> { "sqqq" };
+//List<string> l2= new List<string>();
+
+//listis.AddRange(l1);
+//listis.AddRange(l2);
+
+
+string sx = "sat";
+
+var sxl = sx.Split(new char[] {';',','}).ToList();
+
+listis.AddRange(sxl);
+
+
+
+
+
+
+if (listis.Any() && listis.Count>1)
+{
+    Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
+}
+
+    var ssss = listis.FirstOrDefault();
+    Console.WriteLine($"lists : {JsonSerializer.Serialize(listis)}");
+
+
+
+
+
+Console.WriteLine($"HubResponse : {JsonSerializer.Serialize(HubResponse<object>.Fail(500, "error"))}");
+
+
+
+
+Dictionary<string, string> listOfDict11 = new Dictionary<string, string> 
+{
+    {"x1","y1" },
+    {"x2","y2" },
+    {"x3","y3" },
+    {"x4","y4" },
+};
+
+Console.WriteLine($"listOfDict11 : {JsonSerializer.Serialize(listOfDict11)}");
