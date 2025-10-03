@@ -1,0 +1,18 @@
+﻿🔹 ১. BehaviorSubject<T>
+
+# BehaviorSubject<T> হলো এক ধরনের Subject (একই সাথে observable + observer)।
+
+# এর কাজ হলো:
+# সর্বশেষ ভ্যালু (last value) সবসময় ধরে রাখা।
+# নতুন subscriber যুক্ত হলে সেই last value প্রথমেই দিয়ে দেওয়া।
+# এরপর যতবার নতুন ভ্যালু push হবে, subscriber গুলো সেটা real-time এ পাবে।
+
+
+
+🔹 ২. CompositeDisposable
+
+# CompositeDisposable হলো এক ধরনের ডিসপোজেবল ম্যানেজার।
+
+# Rx.NET–এ যখন আপনি অনেকগুলো subscription করেন (যেমন .Subscribe() কল), তখন প্রত্যেকটা subscription একটি IDisposable রিটার্ন করে।
+# এগুলো আলাদা আলাদা dispose করার ঝামেলা এড়াতে CompositeDisposable ব্যবহার করা হয়।
+# একবারে সবকিছু Dispose করা যায়।

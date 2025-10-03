@@ -176,6 +176,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp12_New", "CSharp12_Ne
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralDesignPattern", "StructuralDesignPattern\StructuralDesignPattern.csproj", "{874B742A-3092-4D52-B703-FC9529F45DA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rx.Net", "Rx.Net\Rx.Net.csproj", "{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -856,6 +858,14 @@ Global
 		{874B742A-3092-4D52-B703-FC9529F45DA6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{874B742A-3092-4D52-B703-FC9529F45DA6}.Release|x64.ActiveCfg = Release|Any CPU
 		{874B742A-3092-4D52-B703-FC9529F45DA6}.Release|x64.Build.0 = Release|Any CPU
+		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Debug|x64.Build.0 = Debug|Any CPU
+		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Release|x64.ActiveCfg = Release|Any CPU
+		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
