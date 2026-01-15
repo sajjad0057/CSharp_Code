@@ -178,6 +178,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuralDesignPattern", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rx.Net", "Rx.Net\Rx.Net.csproj", "{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumOfTwoValue", "SumOfTwoValue\SumOfTwoValue.csproj", "{EA7E9682-0022-4290-B70D-6ADB7328E2BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -866,6 +868,14 @@ Global
 		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Release|x64.ActiveCfg = Release|Any CPU
 		{CCB3D6BD-1C68-490C-9509-B9A55D5E7757}.Release|x64.Build.0 = Release|Any CPU
+		{EA7E9682-0022-4290-B70D-6ADB7328E2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA7E9682-0022-4290-B70D-6ADB7328E2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA7E9682-0022-4290-B70D-6ADB7328E2BD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{EA7E9682-0022-4290-B70D-6ADB7328E2BD}.Debug|x64.Build.0 = Debug|Any CPU
+		{EA7E9682-0022-4290-B70D-6ADB7328E2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA7E9682-0022-4290-B70D-6ADB7328E2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA7E9682-0022-4290-B70D-6ADB7328E2BD}.Release|x64.ActiveCfg = Release|Any CPU
+		{EA7E9682-0022-4290-B70D-6ADB7328E2BD}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
