@@ -1,19 +1,21 @@
-﻿int[] TwoSum(int[] nums, int target)
+﻿
+
+int[] TwoSum(int[] nums, int target)
 {
-    for(int i = 0; i < nums.Length; i++)
+    Dictionary<int, int> dict = new();
+    for (int i = 0; i < nums.Length; i++)
     {
-        for(int j =i+1; j < nums.Length; j++)
-        {
-            if (nums[i] + nums[j] == target)
-                return new int[] { i, j };
-        }
+        int temp = target - nums[i];
+        if (dict.ContainsKey(temp))
+            return new int[] { dict[temp], i };
+        dict.TryAdd(nums[i], i);
     }
 
-    return new int[] {};
+    return Array.Empty<int>();
 }
 
 
-var x = TwoSum(new int[] { 2, 5, 5, 11 }, 10);
+var x = TwoSum(new int[] { 1, 1, 1, 1, 1, 4, 1, 1, 1, 1, 1, 7, 1, 1, 1, 1, 1 }, 11);
 
 foreach(int i in x)
 {
